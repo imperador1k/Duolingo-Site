@@ -1,0 +1,76 @@
+<svg width="70" height="54" viewBox="0 0 70 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_pt_002)">
+
+    <!-- Base vermelha com cantos arredondados Duolingo -->
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M12.563 0H57.437C61.8054 0 63.3895 0.454846 64.9865 1.30895C66.5836 2.16305 67.8369 3.41642 68.691 5.01346C69.5452 6.61049 70 8.1946 70 12.563V41.437C70 45.8054 69.5452 47.3895 68.691 48.9865C67.8369 50.5836 66.5836 51.8369 64.9865 52.6911C63.3895 53.5452 61.8054 54 57.437 54H12.563C8.1946 54 6.61049 53.5452 5.01346 52.6911C3.41642 51.8369 2.16305 50.5836 1.30895 48.9865C0.454846 47.3895 0 45.8054 0 41.437V12.563C0 8.1946 0.454846 6.61049 1.30895 5.01346C2.16305 3.41642 3.41642 2.16305 5.01346 1.30895C6.61049 0.454846 8.1946 0 12.563 0Z"
+      fill="#E8282B"/>
+
+    <!-- Banda verde - 2/5 da largura com cantos arredondados à esquerda -->
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M12.563 0H28V54H12.563C8.1946 54 6.61049 53.5452 5.01346 52.6911C3.41642 51.8369 2.16305 50.5836 1.30895 48.9865C0.454846 47.3895 0 45.8054 0 41.437V12.563C0 8.1946 0.454846 6.61049 1.30895 5.01346C2.16305 3.41642 3.41642 2.16305 5.01346 1.30895C6.61049 0.454846 8.1946 0 12.563 0Z"
+      fill="#3DB33D"/>
+
+    <!-- ESCUDO centrado na linha verde/vermelha -->
+    <!-- Bordadura dourada -->
+    <circle cx="28" cy="27" r="11.5" fill="#FFC800"/>
+    <!-- Anel vermelho -->
+    <circle cx="28" cy="27" r="10" fill="#E8282B"/>
+    <!-- Interior branco -->
+    <circle cx="28" cy="27" r="8.2" fill="#EEEEEE"/>
+
+    <!-- Quina CENTRO -->
+    <rect x="25.3" y="24.3" width="5.4" height="5.4" rx="0.9" fill="#1CB0F6"/>
+    <circle cx="26.5" cy="25.6" r="0.62" fill="white"/>
+    <circle cx="28"   cy="25.6" r="0.62" fill="white"/>
+    <circle cx="29.5" cy="25.6" r="0.62" fill="white"/>
+    <circle cx="26.5" cy="27.1" r="0.62" fill="white"/>
+    <circle cx="28"   cy="27.1" r="0.62" fill="white"/>
+    <circle cx="29.5" cy="27.1" r="0.62" fill="white"/>
+    <circle cx="26.5" cy="28.6" r="0.62" fill="white"/>
+    <circle cx="28"   cy="28.6" r="0.62" fill="white"/>
+    <circle cx="29.5" cy="28.6" r="0.62" fill="white"/>
+
+    <!-- Quina CIMA -->
+    <rect x="25.3" y="18.5" width="5.4" height="4.5" rx="0.9" fill="#1CB0F6"/>
+    <circle cx="26.5" cy="19.7" r="0.58" fill="white"/>
+    <circle cx="28"   cy="19.7" r="0.58" fill="white"/>
+    <circle cx="29.5" cy="19.7" r="0.58" fill="white"/>
+    <circle cx="26.5" cy="21.3" r="0.58" fill="white"/>
+    <circle cx="28"   cy="21.3" r="0.58" fill="white"/>
+    <circle cx="29.5" cy="21.3" r="0.58" fill="white"/>
+
+    <!-- Quina BAIXO -->
+    <rect x="25.3" y="31" width="5.4" height="4.5" rx="0.9" fill="#1CB0F6"/>
+    <circle cx="26.5" cy="32.2" r="0.58" fill="white"/>
+    <circle cx="28"   cy="32.2" r="0.58" fill="white"/>
+    <circle cx="29.5" cy="32.2" r="0.58" fill="white"/>
+    <circle cx="26.5" cy="33.8" r="0.58" fill="white"/>
+    <circle cx="28"   cy="33.8" r="0.58" fill="white"/>
+    <circle cx="29.5" cy="33.8" r="0.58" fill="white"/>
+
+    <!-- Quina ESQUERDA -->
+    <rect x="19.5" y="24.3" width="4.5" height="5.4" rx="0.9" fill="#1CB0F6"/>
+    <circle cx="20.7" cy="25.6" r="0.58" fill="white"/>
+    <circle cx="22.2" cy="25.6" r="0.58" fill="white"/>
+    <circle cx="20.7" cy="27.1" r="0.58" fill="white"/>
+    <circle cx="22.2" cy="27.1" r="0.58" fill="white"/>
+    <circle cx="20.7" cy="28.6" r="0.58" fill="white"/>
+    <circle cx="22.2" cy="28.6" r="0.58" fill="white"/>
+
+    <!-- Quina DIREITA -->
+    <rect x="31" y="24.3" width="4.5" height="5.4" rx="0.9" fill="#1CB0F6"/>
+    <circle cx="32.2" cy="25.6" r="0.58" fill="white"/>
+    <circle cx="33.7" cy="25.6" r="0.58" fill="white"/>
+    <circle cx="32.2" cy="27.1" r="0.58" fill="white"/>
+    <circle cx="33.7" cy="27.1" r="0.58" fill="white"/>
+    <circle cx="32.2" cy="28.6" r="0.58" fill="white"/>
+    <circle cx="33.7" cy="28.6" r="0.58" fill="white"/>
+
+  </g>
+  <defs>
+    <clipPath id="clip0_pt_002">
+      <rect width="70" height="54" fill="white"/>
+    </clipPath>
+  </defs>
+</svg>
