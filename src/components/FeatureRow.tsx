@@ -34,7 +34,7 @@ export function FeatureRow({ title, description, reverse = false, imagePlacehold
         transition={{ duration: 0.6, delay: 0.1, type: "spring", bounce: 0.4 }}
         className="flex-1 w-full text-center md:text-left flex flex-col gap-6"
       >
-        <h2 className="text-4xl md:text-5xl font-extrabold text-[#58cc02] tracking-tight capitalize">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-[#58cc02] tracking-tight">
           {title}
         </h2>
         <p className="text-[#777] font-medium text-[19px] leading-[1.6]">
