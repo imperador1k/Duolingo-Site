@@ -17,6 +17,7 @@ export function Footer() {
           <Link href="/info/method" className="hover:text-white transition-colors">{t('footer.about.method')}</Link>
           <Link href="/info/efficacy" className="hover:text-white transition-colors">{t('footer.about.efficacy')}</Link>
           <Link href="/info/team" className="hover:text-white transition-colors">{t('footer.about.team')}</Link>
+          <Link href="/info/join-us" className="hover:text-white transition-colors">{t('footer.about.join_us')}</Link>
         </div>
         <div className="flex flex-col gap-3">
           <h3 className="text-white font-black uppercase text-base mb-2">{t('footer.products')}</h3>
