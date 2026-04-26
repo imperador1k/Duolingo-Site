@@ -15,23 +15,28 @@ type FeatureRowProps = {
 export function FeatureRow({ title, description, reverse = false, imagePlaceholder, children }: FeatureRowProps) {
   return (
     <section className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center max-w-5xl mx-auto px-6 py-20 gap-16`}>
-      {/* Image / Graphic Reveal */}
+      {/* Image / Graphic Reveal (Scale-in) */}
       <motion.div
-        initial={{ opacity: 0, x: reverse ? 50 : -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.6, type: "spring", bounce: 0.4 }}
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ 
+          type: "spring", 
+          stiffness: 100,
+          damping: 15,
+          duration: 0.6 
+        }}
         className="flex-1 w-full flex justify-center relative"
       >
         {imagePlaceholder}
       </motion.div>
 
-      {/* Content Side Reveal */}
+      {/* Content Side Reveal (Fade-in Up) */}
       <motion.div
-        initial={{ opacity: 0, x: reverse ? -50 : 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.6, delay: 0.1, type: "spring", bounce: 0.4 }}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
         className="flex-1 w-full text-center md:text-left flex flex-col gap-6"
       >
         <h2 className="text-4xl md:text-5xl font-extrabold text-[#58cc02] tracking-tight">
@@ -42,9 +47,15 @@ export function FeatureRow({ title, description, reverse = false, imagePlacehold
         </p>
         
         {children && (
-          <div className="mt-2 flex justify-center md:justify-start">
+          <motion.div 
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3, duration: 0.4 }}
+            className="mt-2 flex justify-center md:justify-start"
+          >
             {children}
-          </div>
+          </motion.div>
         )}
       </motion.div>
     </section>

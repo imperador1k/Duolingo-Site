@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronDown } from 'lucide-react';
-import { Language } from '../hooks/useTranslation';
+import { Language, useTranslation } from '../hooks/useTranslation';
 
 const languages: { code: Language; name: string; flag: string }[] = [
   { code: 'pt', name: 'Português', flag: '/flags/pt.svg' },
@@ -20,6 +20,7 @@ interface LanguageDropdownProps {
 }
 
 export function LanguageDropdown({ currentLang, onSelect }: LanguageDropdownProps) {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -42,7 +43,7 @@ export function LanguageDropdown({ currentLang, onSelect }: LanguageDropdownProp
         className="flex items-center gap-2 text-gray-400 font-bold uppercase text-[11px] tracking-widest cursor-pointer hover:text-gray-600 transition-colors group"
       >
         <div className="flex items-center gap-2">
-            <span className="hidden sm:inline">Idioma do site:</span>
+            <span className="hidden sm:inline">{t('common.lang_selector')}</span>
             <div className="flex items-center gap-1.5 bg-gray-50 px-2.5 py-1.5 rounded-xl border border-gray-200 group-hover:border-gray-300 transition-all shadow-sm">
                 <img src={selectedLang.flag} alt={selectedLang.name} className="w-5 h-3.5 object-cover rounded-xs shadow-xs" />
                 <span className="text-[#4b4b4b] text-[12px]">{selectedLang.name}</span>
