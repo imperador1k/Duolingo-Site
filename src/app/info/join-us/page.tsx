@@ -138,8 +138,6 @@ export default function JoinUsPage() {
       </section>
 
       {/* Collaboration Area - High-Contrast Editorial Stage */}
-      <section className="relative w-full min-h-[900px] lg:min-h-[1100px] bg-slate-50 overflow-hidden flex flex-col items-center justify-center py-20 lg:py-40">
-        
       <section className="relative min-h-[900px] md:min-h-[1100px] bg-slate-50 overflow-hidden flex flex-col items-center justify-center py-20">
         {/* Artistic Particles */}
         <div className="absolute inset-0 pointer-events-none">

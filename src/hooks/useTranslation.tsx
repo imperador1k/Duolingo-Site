@@ -258,7 +258,7 @@ const translations = {
     "info.doubts.cat.plans": "Planos",
 
     // LEGAL - Common
-    "legal.back": "Voltar para a App",
+    "legal.back": "Voltar ao Início",
     "legal.official": "Documento Oficial",
     "legal.update": "Última Atualização",
     "legal.version": "Versão",
@@ -308,8 +308,7 @@ const translations = {
     "legal.privacy.section4.desc": "Não recolhemos conscientemente dados de menores de 18 anos sem autorização legal.",
     "legal.privacy.section5.title": "Os Seus Direitos",
     "legal.privacy.section5.desc": "Poderá sempre solicitar cópias ou a eliminação dos seus dados. Respeitamos o modo 'Não Rastrear'.",
-    "legal.privacy.footer": "A sua confiança é o motor da MyDuolingo.",
-    "legal.back": "Voltar ao Início"
+    "legal.privacy.footer": "A sua confiança é o motor da MyDuolingo."
   },
   es: {
     "header.login": "Entrar",
@@ -549,7 +548,7 @@ const translations = {
     "info.doubts.cat.consistency": "Consistencia",
     "info.doubts.cat.plans": "Planes",
 
-    "legal.back": "Volver a la App",
+    "legal.back": "Volver al Inicio",
     "legal.official": "Documento Oficial",
     "legal.update": "Última Actualización",
     "legal.version": "Versión",
@@ -597,8 +596,7 @@ const translations = {
     "legal.privacy.section4.desc": "No recopilamos conscientemente datos de menores de 18 años sin autorización legal.",
     "legal.privacy.section5.title": "Sus Derechos",
     "legal.privacy.section5.desc": "Siempre podrá solicitar copias o la eliminación de sus datos. Respetamos el modo 'No rastrear'.",
-    "legal.privacy.footer": "Su confianza es el motor de MyDuolingo.",
-    "legal.back": "Volver al Inicio"
+    "legal.privacy.footer": "Su confianza es el motor de MyDuolingo."
   },
   fr: {
     "header.login": "Se connecter",
@@ -838,7 +836,7 @@ const translations = {
     "info.doubts.cat.consistency": "Régularité",
     "info.doubts.cat.plans": "Plans",
 
-    "legal.back": "Retour à l'App",
+    "legal.back": "Retour à l'Accueil",
     "legal.official": "Document officiel",
     "legal.update": "Dernière mise à jour",
     "legal.version": "Version",
@@ -886,8 +884,7 @@ const translations = {
     "legal.privacy.section4.desc": "Nous ne collectons pas sciemment de données auprès de mineurs de moins de 18 ans sans autorisation légale.",
     "legal.privacy.section5.title": "Vos droits",
     "legal.privacy.section5.desc": "Vous pouvez toujours demander des copies ou la suppression de vos données. Nous respectons le mode 'Ne pas suivre'.",
-    "legal.privacy.footer": "Votre confiance est le moteur de MyDuolingo.",
-    "legal.back": "Retour à l'Accueil"
+    "legal.privacy.footer": "Votre confiance est le moteur de MyDuolingo."
   },
   de: {
     "header.login": "Anmelden",
@@ -1127,7 +1124,7 @@ const translations = {
     "info.doubts.cat.consistency": "Beständigkeit",
     "info.doubts.cat.plans": "Pläne",
 
-    "legal.back": "Zurück zur App",
+    "legal.back": "Zurück zum Start",
     "legal.official": "Offizielles Dokument",
     "legal.update": "Zuletzt aktualisiert",
     "legal.version": "Version",
@@ -1175,8 +1172,7 @@ const translations = {
     "legal.privacy.section4.desc": "Wir sammeln wissentlich keine Daten von Minderjährigen unter 18 Jahren ohne gesetzliche Erlaubnis.",
     "legal.privacy.section5.title": "Ihre Rechte",
     "legal.privacy.section5.desc": "Sie können jederzeit Kopien oder die Löschung Ihrer Daten anfordern. Wir respektieren den 'Do Not Track'-Modus.",
-    "legal.privacy.footer": "Ihr Vertrauen ist der Motor von MyDuolingo.",
-    "legal.back": "Zurück zum Start"
+    "legal.privacy.footer": "Ihr Vertrauen ist der Motor von MyDuolingo."
   },
   it: {
     "header.login": "Accedi",
@@ -1404,7 +1400,7 @@ const translations = {
     "info.doubts.cat.consistency": "Costanza",
     "info.doubts.cat.plans": "Piani",
 
-    "legal.back": "Torna all'App",
+    "legal.back": "Torna alla Home",
     "legal.official": "Documento Ufficiale",
     "legal.update": "Ultimo aggiornamento",
     "legal.version": "Versione",
@@ -1452,8 +1448,7 @@ const translations = {
     "legal.privacy.section4.desc": "Non raccogliamo consapevolmente dati da minori di 18 anni senza autorizzazione legale.",
     "legal.privacy.section5.title": "I vostri diritti",
     "legal.privacy.section5.desc": "È sempre possibile richiedere copie o la cancellazione dei propri dati. Rispettiamo la modalità 'Non tracciare'.",
-    "legal.privacy.footer": "La vostra fiducia è il motore di MyDuolingo.",
-    "legal.back": "Torna alla Home"
+    "legal.privacy.footer": "La vostra fiducia è il motore di MyDuolingo."
   },
   en: {
     "header.login": "Log in",
@@ -1700,7 +1695,7 @@ const translations = {
     "info.doubts.cat.consistency": "Consistency",
     "info.doubts.cat.plans": "Plans",
 
-    "legal.back": "Back to App",
+    "legal.back": "Back to Home",
     "legal.official": "Official Document",
     "legal.update": "Last Updated",
     "legal.version": "Version",
@@ -1748,8 +1743,7 @@ const translations = {
     "legal.privacy.section4.desc": "We do not knowingly collect data from minors under 18 without legal authorization.",
     "legal.privacy.section5.title": "Your Rights",
     "legal.privacy.section5.desc": "You may always request copies or deletion of your data. We respect 'Do Not Track' mode.",
-    "legal.privacy.footer": "Your trust is the engine of MyDuolingo.",
-    "legal.back": "Back to Home"
+    "legal.privacy.footer": "Your trust is the engine of MyDuolingo."
   }
 } as const;
 
