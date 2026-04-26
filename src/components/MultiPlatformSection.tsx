@@ -1,11 +1,9 @@
-"use client";
-
 import React from 'react';
 import { motion, Variants } from 'motion/react';
+import { useTranslation } from '../hooks/useTranslation';
 
 /**
  * Animation Variants
- * Organized outside the component for cleaner JSX.
  */
 const floatingVariants: Variants = {
   animate: (delay: number) => ({
@@ -34,11 +32,10 @@ const particleVariants: Variants = {
 
 /**
  * MultiPlatformSection Component
- * 
- * A premium, playful section showcasing the multi-platform nature of the app
- * with floating device mockups and interactive "juicy" buttons.
  */
-export const MultiPlatformSection: React.FC = () => {
+export const MultiPlatformSection: React.FC<{ title?: string }> = ({ title }) => {
+  const { t } = useTranslation();
+  
   return (
     <section className="min-h-screen bg-[#ddf4ff] flex flex-col items-center py-24 px-6 relative overflow-hidden">
       
@@ -50,7 +47,7 @@ export const MultiPlatformSection: React.FC = () => {
           viewport={{ once: true }}
           className="font-extrabold text-4xl sm:text-5xl md:text-7xl text-[#042c60] lowercase tracking-tight max-w-3xl"
         >
-          aprenda onde e quando quiser
+          {title || t('eco.title')}
         </motion.h2>
 
         {/* Juicy Store Buttons */}
@@ -61,7 +58,7 @@ export const MultiPlatformSection: React.FC = () => {
               <path d="M17.062 14.125c-.026 2.45 2.083 3.633 2.133 3.657-.018.061-.334 1.144-1.096 2.257-.659.96-1.343 1.916-2.424 1.936-1.06.02-1.399-.623-2.613-.623-1.213 0-1.592.603-2.6.643-1.06.038-1.848-1.036-2.513-2.001-1.358-1.963-2.394-5.544-1.006-7.954.689-1.196 1.918-1.956 3.255-1.976 1.012-.016 1.968.685 2.583.685.614 0 1.8-.847 3.011-.724.507.02 1.932.203 2.846 1.539-.074.045-1.699.99-1.676 2.96zm-2.457-7.854c.548-.664.919-1.587.818-2.511-.795.032-1.758.53-2.328 1.194-.511.591-.958 1.536-.837 2.438.887.069 1.799-.457 2.347-1.121z" />
             </svg>
             <div className="text-left">
-              <div className="text-[8px] sm:text-[9px] uppercase font-black opacity-60 leading-none mb-1">Download on the</div>
+              <div className="text-[8px] sm:text-[9px] uppercase font-black opacity-60 leading-none mb-1">{t('eco.download_app')}</div>
               <div className="text-sm sm:text-lg font-black leading-none">App Store</div>
             </div>
           </button>
@@ -72,7 +69,7 @@ export const MultiPlatformSection: React.FC = () => {
               <path d="M3.609 1.814L13.792 12 3.61 22.186a2.29 2.29 0 0 1-.61-1.59V3.404c0-.606.22-1.164.609-1.59zm11.185 11.186l2.308-2.308-11.722-6.7c-.368-.21-.803-.333-1.267-.333l10.681 9.341zm2.308-2.308l2.91 1.66c.6.342.987.973.987 1.648a1.91 1.91 0 0 1-.987 1.647l-2.91 1.66-3.102-3.102 3.102-3.102zm-3.102 3.102l-10.681 9.341c.464 0 .899-.123 1.267-.333l11.722-6.7-2.308-2.308z" />
             </svg>
             <div className="text-left">
-              <div className="text-[8px] sm:text-[9px] uppercase font-black opacity-60 leading-none mb-1">Get it on</div>
+              <div className="text-[8px] sm:text-[9px] uppercase font-black opacity-60 leading-none mb-1">{t('eco.get_google')}</div>
               <div className="text-sm sm:text-lg font-black leading-none">Google Play</div>
             </div>
           </button>

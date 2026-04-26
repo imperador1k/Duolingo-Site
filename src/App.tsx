@@ -10,6 +10,9 @@ import { LanguageBanner } from './components/LanguageBanner';
 import { MultiPlatformSection } from './components/MultiPlatformSection';
 import { SuperSection } from './components/SuperSection';
 import { LanguageDropdown } from './components/LanguageDropdown';
+import { AIModal } from './components/AIModal';
+import { GamesModal } from './components/GamesModal';
+import { ChatModal } from './components/ChatModal';
 
 const Lottie = lazy(() => import('lottie-react'));
 
@@ -57,6 +60,9 @@ function AsyncLottie({ path, className, priority = false }: { path: string; clas
 export default function App() {
   const { t, lang, setLang } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isAIModalOpen, setIsAIModalOpen] = useState(false);
+  const [isGamesModalOpen, setIsGamesModalOpen] = useState(false);
+  const [isChatModalOpen, setIsChatModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -65,12 +71,12 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#3c3c3c] overflow-x-hidden">
+    <div className="min-h-screen bg-white font-sans text-[#3c3c3c]">
       {/* Header */}
-      <header className="h-20 border-b-2 border-gray-100 px-6 md:px-12 flex items-center justify-between sticky top-0 bg-white z-50">
+      <header className={`h-20 border-b-2 border-gray-100 px-6 md:px-12 flex items-center justify-between fixed top-0 left-0 right-0 bg-white z-50 transition-shadow duration-300 ${isScrolled ? 'shadow-md' : ''}`}>
         {/* Logo Placeholder */}
         <div className="flex items-center gap-2 cursor-pointer hover:scale-105 transition-transform">
-          <img src="/icon.png" alt="MyDuolingo Icon" className="w-10 h-10 object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextElementSibling!.classList.remove('hidden'); }} />
+          <img src="/duolingo_icon_2.png" alt="MyDuolingo Icon" className="w-10 h-10 object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextElementSibling!.classList.remove('hidden'); }} />
           <div className="hidden w-10 h-10 bg-[#58cc02] rounded-xl flex items-center justify-center shadow-[0_4px_0_0_#58a700]">
             <span className="text-white font-black text-2xl">M</span>
           </div>
@@ -87,7 +93,7 @@ export default function App() {
       </header>
 
       {/* Hero Section Container */}
-      <div className="flex flex-col md:min-h-[calc(100vh-80px)]">
+      <div className="flex flex-col md:min-h-[calc(100vh-80px)] pt-20 overflow-x-hidden">
         <main className="flex-1 max-w-[1000px] mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 px-6 md:px-12 items-center py-12 md:py-0">
         {/* Visual / Floating Group */}
         <div className="relative flex justify-center items-center w-full order-1 md:order-none min-h-[300px] md:min-h-[350px]">
@@ -178,7 +184,7 @@ export default function App() {
         />
       </div>
 
-      <MultiPlatformSection />
+      <MultiPlatformSection title={t('eco.title')} />
 
       <SuperSection>
         <AsyncLottie path="/lotties/filipe7.json" className="w-full h-full" />
@@ -186,49 +192,61 @@ export default function App() {
 
       {/* Other Products */}
       <div className="py-20 pb-0">
-        {/* Test */}
+        {/* AI */}
         <FeatureRow
-          title={t('test.title')}
-          description={t('test.desc')}
+          title={t('ai.title')}
+          description={t('ai.desc')}
           imagePlaceholder={
             <div className="relative w-64 h-64 flex items-center justify-center">
               <AsyncLottie path="/lotties/filipe8.json" className="w-full h-full" />
             </div>
           }
         >
-          <Button3D variant="outline" className="border-gray-200 text-[#1cb0f6] shadow-[0_4px_0_0_#e5e5e5] w-full sm:w-auto px-8">
-            {t('test.cta')}
+          <Button3D 
+            variant="outline" 
+            className="border-gray-200 text-[#1cb0f6] shadow-[0_4px_0_0_#e5e5e5] w-full sm:w-auto px-8"
+            onClick={() => setIsAIModalOpen(true)}
+          >
+            {t('ai.cta')}
           </Button3D>
         </FeatureRow>
-
-        {/* Schools */}
+        
+        {/* Games */}
         <FeatureRow
           reverse
-          title={t('schools.title')}
-          description={t('schools.desc')}
+          title={t('games.title')}
+          description={t('games.desc')}
           imagePlaceholder={
             <div className="relative w-64 h-64">
               <AsyncLottie path="/lotties/filipe9.json" className="w-full h-full" />
             </div>
           }
         >
-          <Button3D variant="outline" className="border-gray-200 text-[#1cb0f6] shadow-[0_4px_0_0_#e5e5e5] w-full sm:w-auto px-8">
-            {t('schools.cta')}
+          <Button3D 
+            variant="outline" 
+            className="border-gray-200 text-[#1cb0f6] shadow-[0_4px_0_0_#e5e5e5] w-full sm:w-auto px-8"
+            onClick={() => setIsGamesModalOpen(true)}
+          >
+            {t('games.cta')}
           </Button3D>
         </FeatureRow>
 
-        {/* ABC */}
+        {/* Chat */}
         <FeatureRow
-          title={t('abc.title')}
-          description={t('abc.desc')}
+          title={t('chat.title')}
+          description={t('chat.desc')}
           imagePlaceholder={
             <div className="relative w-72 h-64 flex items-end justify-center">
               <AsyncLottie path="/lotties/filipe10.json" className="w-full h-full" />
             </div>
           }
         >
-          <Button3D variant="outline" className="border-gray-200 text-[#1cb0f6] shadow-[0_4px_0_0_#e5e5e5] w-full sm:w-auto px-8">
-            {t('abc.cta')}
+          <Button3D 
+            variant="outline" 
+            className="border-gray-200 text-[#1cb0f6] shadow-[0_4px_0_0_#e5e5e5] w-full sm:w-auto px-8"
+            onClick={() => setIsChatModalOpen(true)}
+          >
+            {t('chat.cta')}
           </Button3D>
         </FeatureRow>
       </div>
@@ -241,11 +259,11 @@ export default function App() {
 
         <div className="max-w-3xl mx-auto px-6 relative z-10 flex flex-col items-center mb-0">
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#58cc02] tracking-tight mb-4">
-            Aprenda um idioma com o MyDuolingo
+            {t('cta.title')}
           </h2>
           <div className="w-full flex justify-center">
             <Button3D variant="primary" className="py-4 px-12 text-[15px] max-w-[320px] w-full bg-[#58cc02] hover:bg-[#46a302]">
-              COMEÇAR AGORA
+              {t('hero.start')}
             </Button3D>
           </div>
         </div>
@@ -270,21 +288,17 @@ export default function App() {
           <div className="flex flex-col gap-3">
             <h3 className="text-white font-black uppercase text-base mb-2">Produtos</h3>
             <a href="#" className="hover:text-white transition-colors">MyDuolingo</a>
-            <a href="#" className="hover:text-white transition-colors">Schools</a>
-            <a href="#" className="hover:text-white transition-colors">Test</a>
-            <a href="#" className="hover:text-white transition-colors">Podcast</a>
-            <a href="#" className="hover:text-white transition-colors">Business</a>
           </div>
           <div className="flex flex-col gap-3">
             <h3 className="text-white font-black uppercase text-base mb-2">Aplicativos</h3>
             <a href="#" className="hover:text-white transition-colors">Android</a>
-            <a href="#" className="hover:text-white transition-colors">iOS</a>
+            <a href="#" className="hover:text-white transition-colors">Windows</a>
+            <a href="#" className="hover:text-white transition-colors">Web</a>
           </div>
           <div className="flex flex-col gap-3">
             <h3 className="text-white font-black uppercase text-base mb-2">Suporte</h3>
             <a href="#" className="hover:text-white transition-colors">Dúvidas</a>
             <a href="#" className="hover:text-white transition-colors">Fórum</a>
-            <a href="#" className="hover:text-white transition-colors">Status</a>
           </div>
           <div className="flex flex-col gap-3">
             <h3 className="text-white font-black uppercase text-base mb-2">Termos e privacidade</h3>
@@ -314,6 +328,10 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      <AIModal isOpen={isAIModalOpen} onClose={() => setIsAIModalOpen(false)} />
+      <GamesModal isOpen={isGamesModalOpen} onClose={() => setIsGamesModalOpen(false)} />
+      <ChatModal isOpen={isChatModalOpen} onClose={() => setIsChatModalOpen(false)} />
     </div>
   );
 }

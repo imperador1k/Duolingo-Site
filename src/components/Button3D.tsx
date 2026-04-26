@@ -26,7 +26,7 @@ export function Button3D({
 }: Button3DProps) {
   
   // Core structural classes for the 3D shape and active (pushed) interaction
-  const baseClasses = "relative select-none font-bold uppercase tracking-widest rounded-2xl px-6 py-3 transition-all active:translate-y-[2px] active:shadow-none outline-none";
+  const baseClasses = "relative select-none font-bold uppercase tracking-widest rounded-2xl px-6 py-3 transition-all active:translate-y-[2px] active:shadow-none outline-none cursor-pointer";
   const widthClasses = fullWidth ? "w-full" : "";
 
   // Theming configuration

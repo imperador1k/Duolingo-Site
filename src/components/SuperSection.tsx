@@ -1,7 +1,6 @@
-"use client";
-
 import React from 'react';
 import { motion } from 'motion/react';
+import { useTranslation } from '../hooks/useTranslation';
 
 /**
  * SuperSection Component
@@ -10,6 +9,8 @@ import { motion } from 'motion/react';
  * animated ambient glow, and high-fidelity typography.
  */
 export const SuperSection: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
+  const { t } = useTranslation();
+  
   return (
     <section className="relative min-h-[140vh] bg-[#0b0520] w-full overflow-hidden flex items-center justify-center py-24">
       {/* 1. Animated Aurora / Ambient Glow Background */}
@@ -75,15 +76,15 @@ export const SuperSection: React.FC<{ children?: React.ReactNode }> = ({ childre
             whileInView={{ opacity: 1, x: 0 }}
             className="text-pink-400 font-black text-sm md:text-base tracking-[0.4em] uppercase mb-4"
           >
-            POWER UP WITH
+            {t('super.powered_by')}
           </motion.span>
           
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-5xl sm:text-6xl md:text-8xl font-black leading-none tracking-tighter mb-10 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 drop-shadow-sm"
+            className="text-5xl sm:text-6xl md:text-8xl font-black leading-none tracking-tighter mb-10 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 drop-shadow-sm whitespace-pre-line"
           >
-            SUPER<br />MYDUOLINGO
+            {t('super.title')}
           </motion.h2>
 
           <div className="relative group w-full max-w-[320px]">
@@ -91,20 +92,22 @@ export const SuperSection: React.FC<{ children?: React.ReactNode }> = ({ childre
             <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 rounded-2xl blur-xl opacity-40 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
             
             <button className="relative w-full bg-white text-[#0b0520] font-black text-lg py-4 rounded-2xl border-b-4 border-gray-300 active:border-b-0 active:translate-y-1 transition-all shadow-[0_0_40px_rgba(6,182,212,0.3)]">
-              EXPERIMENTE GRÁTIS
+              {t('super.cta')}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Scroll Indicator / Hint - Reintroduzido conforme solicitado */}
+      {/* Scroll Indicator / Hint */}
       <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-50">
           <motion.div 
             animate={{ y: [0, 10, 0] }} 
             transition={{ repeat: Infinity, duration: 2 }}
             className="w-[2px] h-16 bg-gradient-to-b from-transparent via-cyan-400 to-transparent"
           ></motion.div>
-          <span className="text-[10px] text-cyan-400 font-black tracking-[0.5em] uppercase">Scroll to explore</span>
+          <span className="text-[10px] text-cyan-400 font-black tracking-[0.5em] uppercase">
+            {t('common.scroll')}
+          </span>
       </div>
     </section>
   );
