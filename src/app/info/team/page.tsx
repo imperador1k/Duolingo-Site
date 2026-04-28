@@ -1,7 +1,10 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 import { motion } from 'motion/react';
+import { Users } from 'lucide-react';
+import { Button3D } from '@/components/Button3D';
 import { useTranslation } from '@/hooks/useTranslation';
 
 export default function TeamPage() {
@@ -93,17 +96,38 @@ export default function TeamPage() {
       </div>
 
       <motion.div 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        className="mt-20 p-10 rounded-[3rem] bg-[#3c3c3c] text-white text-center"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mt-32 p-12 md:p-20 rounded-[4rem] bg-[#3c3c3c] text-white text-center relative overflow-hidden group shadow-[0_50px_100px_rgba(0,0,0,0.2)]"
       >
-        <h3 className="text-2xl font-black mb-4">{t('info.team.join.title')}</h3>
-        <p className="text-gray-400 font-medium mb-8 max-w-lg mx-auto">
-          {t('info.team.join.desc')}
-        </p>
-        <button className="bg-white text-[#3c3c3c] font-black px-8 py-4 rounded-2xl hover:scale-105 transition-transform active:scale-95 uppercase tracking-widest text-sm">
-          {t('info.team.join.cta')}
-        </button>
+        {/* Efeito de Fundo Premium */}
+        <div className="absolute top-0 left-0 w-full h-full bg-[#1cb0f6] opacity-[0.03] group-hover:opacity-[0.05] transition-opacity duration-1000" />
+        <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#1cb0f6] blur-[100px] opacity-10 group-hover:opacity-20 transition-opacity duration-1000" />
+        
+        <div className="relative z-10">
+          <motion.div
+            initial={{ scale: 0.9 }}
+            whileInView={{ scale: 1 }}
+            className="w-20 h-20 bg-white/10 rounded-3xl flex items-center justify-center mx-auto mb-10 border-2 border-white/10 shadow-2xl"
+          >
+             <Users size={40} className="text-[#1cb0f6]" strokeWidth={2.5} />
+          </motion.div>
+
+          <h3 className="text-4xl md:text-6xl font-black mb-6 tracking-tighter leading-none">
+            {t('info.team.join.title')}
+          </h3>
+          
+          <p className="text-gray-400 text-xl md:text-2xl font-bold mb-12 max-w-2xl mx-auto leading-relaxed">
+            {t('info.team.join.desc')}
+          </p>
+
+          <Link href="/info/join-us">
+            <Button3D variant="secondary" className="px-12 py-5 bg-[#1cb0f6] text-white border-none text-sm font-black shadow-[0_20px_50px_rgba(28,176,246,0.3)]">
+              {t('info.team.join.cta')}
+            </Button3D>
+          </Link>
+        </div>
       </motion.div>
     </article>
   );

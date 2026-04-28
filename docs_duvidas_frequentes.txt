@@ -1,0 +1,103 @@
+DÚVIDAS FREQUENTES E DOCUMENTAÇÃO DO SITE (Extraído de src/constants/docs.ts)
+
+── MECÂNICAS BASE ──
+
+1. O que são os Pontos de Experiência (XP)?
+Os Pontos de Experiência (XP) representam o teu nível global de conhecimento linguístico e o teu esforço na nossa plataforma.
+Sempre que completares exercícios práticos, lições ou desafios do Arcade com sucesso, vais ser recompensado com XP. A quantidade de XP ganha depende de vários fatores:
+- Lições Básicas: Rendem XP padrão baseado na duração da lição.
+- Revisões: Porque a repetição também tem mérito, fazer exercícios de correção também atribui uma quantidade baseada na performance.
+- Combos: Respostas perfeitas seguidas aumentam o multiplicador!
+O XP é essencial não só para medir o teu progresso pessoal, mas também é o número que dita a tua posição nas Ligas Semanais.
+
+2. Como funcionam os Corações (Vidas)?
+A tua jornada educacional começa sempre com um stock limite de Corações (Vidas) - habitualmente 5.
+Sempre que cometeres um erro durante o percurso das lições convencionais, vais perder um coração. Isto obriga a um ritmo cauteloso e a uma leitura mais atenta das questões, para evitar jogar no "tentativa-erro".
+Se perderes todas as tuas vidas, as lições guiadas ficarão bloqueadas temporariamente, até recuperares forças ou encontrares formas de restaurar os teus Corações. Ninguém aprende bem sob exaustão!
+
+3. Como recuperar Corações perdidos?
+Existem 3 formas principais de repor o teu stock de Corações:
+- O factor tempo: O teu perfil regenera corações passivamente com o tempo (espera algumas horas e voltarás com bateria cheia).
+- Revisão de Conteúdo: No ecrã principal podes optar pelo botão de "Praticar" (onde os teus corações falharam no passado). Por cada sessão de prática concluída, ganhas +1 Coração.
+- Usando Joias: Se o desespero de aprendizagem falar mais alto, poderás visitar a nossa Loja e gastar as tuas suadas Joias para efetuar a recarga completa!
+
+
+── GAMIFICAÇÃO & LOJA ──
+
+4. A Chama da Ofensiva (Streak)
+No canto superior do ecrã irás reparar num número acompanhado de uma chama: isso é a tua Ofensiva (Streak).
+Ela conta o número de dias consecutivos em que concluíste pelo menos uma lição ou exercício. A nossa filosofia dita que 10 minutos de estudo intenso todos os dias são mais eficazes que 2 horas num só fim-de-semana.
+O Marco, a nossa mascote IA, fica extremamente deprimido quando os alunos deixam apagar a ofensiva. Se isso acontecer, o teu contador volta a... zero. Cruel? Talvez. Eficaz? Especialistas apontam que sim.
+
+5. Usar Congelamentos de Ofensiva (Freezes)
+Sabemos que imprevistos acontecem. Seja um exame apertado ou uma ida de urgência ao supermercado, às vezes esquecemo-nos de praticar.
+Para isso inventámos os Congelamentos de Ofensiva! Disponíveis na Loja, estes são escudos invisíveis que, quando ativos (ou comprados previamente), reparam o teu contador caso passes um dia inteiro sem aprender. O dia perdido fica "congelado" e a tua chama continua a crepitar no dia seguinte.
+Nota importante: Tens um limite de transporte de 2 Freezes. Equipa-os sempre.
+
+6. Missões Diárias e Baús de Tesouro
+Através da aba "Desafios" poderás descobrir um ecrã dedicado a Missões Diárias.
+Tratam-se de 3 objetivos dinâmicos que mudam a cada 24 horas. (Ex: "Atinge 50 de XP", "Realiza 3 Lições Perfeitas", "Vence o modo Arcade").
+Quando atinjas a barra de progresso totalizada de todas as missões, um Baú Épico é desbloqueado no topo da página. Podes bater no baú com força para reclamar as tuas Joias bónus, XP extra ou, quem sabe, Freezes gratuitos!
+
+7. MyDuolingo PRO vs Plano Grátis
+O MyDuolingo PRO é a experiência definitiva para quem leva a sério a fluência num novo idioma. Ao contrário do plano Standard (Grátis), o PRO remove as barreiras entre ti e o conhecimento.
+Vantagens Principais do PRO:
+- Corações Infinitos: Nunca mais pares uma lição a meio. Erra, aprende e continua a praticar sem limites ou esperas de regeneração.
+- Prática com IA Desbloqueada: Acesso total à Área de Prática AI, incluindo Conversação Fluída, exercícios de Escrita corrigidos por IA e treino de Escuta personalizado.
+- Estatuto Elite: O teu perfil exibe orgulhosamente o ícone de Infinito nas tabelas de classificação, mostrando o teu compromisso com a excelência.
+Para assinar, visita a nossa Loja. O processamento é feito de forma segura e o acesso às funcionalidades premium é imediato após a confirmação do pagamento.
+
+
+── COMPETIÇÃO & SOCIAL ──
+
+8. O Sistema de Divisões (Ligas)
+Bem-vindo à frente de batalha educacional do MyDuolingo! O Sistema de Ligas junta um coorte de 30 estudantes globais escolhidos aleatoriamente (mas ao teu nível) todas as segundas-feiras.
+Durante a semana, tudo o que precisas de fazer é apanhar mais XP que os teus rivais.
+Existem diferentes escalões (Bronze, Prata, Ouro, Safira, Titânio, Rubi e Diamante). Chegar à liga Diamante significa que fazes parte dos 1% mais viciados do mundo no conhecimento.
+
+9. Promoção e Zona de Risco
+A grelha da Liga não existe apenas para mostrar pontos, o seu interior está dividido em três zonas ativas:
+- Zona Verde (Promoção): Geralmente o Top 5. Terminar na Zona Verde na noite de Domingo garante-te a passagem à próxima (e mais difícil) Liga.
+- Zona Amarela (Manutenção): O meio-termo. Seguras o teu lugar atual.
+- Zona Vermelha (Despromoção): Os últimos 5 alunos sofrem penalizações drásticas — caso a semana feche e caias aqui, vais ser rebaixado para a divisão inferior em prol de rivais mais sedentos. Cuidado!
+
+10. Interagir com Amigos e High-Fives
+A nova área "Feed" revolucionou o MyDuolingo. Podes procurar Amigos utilizando a sua "tag" de perfil.
+No teu feed social verás momentos brilhantes (Ex: "O João avançou para a Liga Diamante!" ou "A Maria concluiu uma Ofensiva Incrível de 30 Dias").
+Podes enviar High-Fives (Bater Mais Cinco 🙌) nestas notificações. Com a nossa física tátil, verás as mãos coloridas a estoirarem na interface dos teus amigos, garantindo-lhes buffs minúsculos e doses épicas de dopamina.
+
+
+── MODO ARCADE ──
+
+11. Modo: Sprint de Vocabulário
+A tua sede de velocidade encontra a sua solução no ecrã superior: o Arcade Hub.
+O Sprint de Vocabulário é um desafio *intenso*. Tens exatamente 60 segundos para associar dezenas de pares de traduções.
+Mas atenção ao ritmo: ganhar é apenas a cereja no topo do bolo. Quanto mais rápido fazes combinações contínuas, consomes a 'Barra de Combo'. Respostas certas e ritmadas aumentam severamente os pontos XP recebidos no limite de tempo máximo. E as tuas mãos vão suar.
+
+12. Chuva de Meteoros & Desafios Swipe
+Nos modos secundários de Arcade (lançados por temporadas temporárias), podes dar de caras com a Chuva de Meteoros.
+A premissa? A IA (Marco) lança blocos pesados do teto de uma galáxia virtual contendo sílabas ou traduções incompletas. Terás que recorrer à mecânica Tinder-Swipe (arrastar violentamente a tua carta para Certo ou Errado) antes que o asteroide embata contra o teu núcleo base e te danifique as Vidas na totalidade!
+Ganhas XP exclusivo da "Arcade Store". Entra... se tiveres coragem e dedos ágeis.
+
+13. Conversando com o Marco (A Mascote)
+O Marco é mais do que a mascote verde flutuante da app. Desenvolvido com os mais sofisticados modelos de LLM integrados no motor educativo, ele funciona no Modo Chat do lado esquerdo do teu Hub de navegação.
+Ficaste bloqueado na gramática alemã ou esqueceste os prefixos portugueses? Foca a atenção no chat e pergunta à mente sintética do Marco. De forma amigável (se tiveres uma ofensiva ativa), ele esmiúça o teu quebra-cabeças.
+Aviso: O Marco usa um chapéu de aviador para a aerodinâmica das respostas.
+
+
+── CONTA & CONFIGURAÇÕES ──
+
+14. Como Alterar o teu Nome e Avatar
+A tua estética diz muito sobre ti, tanto para o Marco como para os teus inimigos nas Divisões.
+Dirige-te à aba Perfil e clica na engrenagem dourada (Configurações) no topo. Aí terás acesso livre para corrigir a tua "Username" e gerir o teu Avatar.
+Nos detalhes, graças à nossa integração Clerk, poderás descarregar uma nova foto de perfil em Alta Resolução. Atualizamos a foto do teu *leaderboard* instantaneamente de forma tátil!
+
+15. Modo Escuro (Dark Mode) e Visão
+Uma dúvida comum levantada no nosso mural: Onde ligo o brutal e misterioso Dark Mode?
+Por design arquitetónico, o MyDuolingo corre nativamente num ambiente brilhante, limpo (Estética de Stone-White) e incrivelmente vibrante em realce pastel de forma intencional, com o propósito de invocar retenção educacional de alta voltagem no cérebro. Estudos associam a nossa palheta nativa a maiores índices de produtividade.
+Não desanimes! A equipa de engenheiros continua em fase de laboratório, ponderando criar um interruptor ultra-premium "Modo Meia-Noite" para os que sofrem de fadiga ocular depois das 2 da manhã.
+
+16. Cravando a tua Assinatura no Wall of Love
+As nossas dinâmicas nasceram das dezenas das vozes incríveis dos nossos alunos. Para eternizar essas opiniões fundámos o mural do Wall of Love (Hall of Fame).
+Para ver o mural real, navega por 'Suporte > Mural da Comunidade'.
+Nesta área, poderás abrir o nosso deslumbrante Modal Tátil, empurrado por trás pelo entusiasmo da mascote Marco, em formato flutuante, deixando um comentário encorpado com 1 a 5 estrelas baseadas na tua experiência. Este componente injeta instantaneamente a tua imagem e opinião no ecrã glorioso principal para que o novo tráfego veja também.
