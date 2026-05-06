@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { PageTransition } from "@/components/PageTransition";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -28,7 +29,9 @@ export default function RootLayout({
       <body className={`${nunito.variable} font-sans antialiased text-[#3c3c3c] bg-white`}>
         <Providers>
           <Navbar />
-          {children}
+          <PageTransition>
+            {children}
+          </PageTransition>
           <Footer />
         </Providers>
       </body>

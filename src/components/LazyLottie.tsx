@@ -31,12 +31,9 @@ const LazyLottieComponent = ({ animationPath, className, priority = false }: Laz
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setInView(true);
-          observer.disconnect();
-        }
+        setInView(entry.isIntersecting);
       },
-      { rootMargin: '400px' } // Margem segura
+      { rootMargin: '200px' } // Reduced margin for better CPU management
     );
 
     if (containerRef.current) {
@@ -44,11 +41,11 @@ const LazyLottieComponent = ({ animationPath, className, priority = false }: Laz
     }
 
     return () => observer.disconnect();
-  }, [priority, inView]);
+  }, [priority]);
 
   useEffect(() => {
     if (!inView && !priority) return;
-    if (animationData) return; // Já carregado
+    if (animationData) return;
 
     const controller = new AbortController();
     
@@ -80,7 +77,11 @@ const LazyLottieComponent = ({ animationPath, className, priority = false }: Laz
         <Lottie 
           animationData={animationData} 
           loop={true} 
-          autoplay={true} 
+          autoplay={inView || priority} 
+          rendererSettings={{
+            progressiveLoad: true,
+            preserveAspectRatio: 'xMidYMid slice'
+          }}
           className="w-full h-full"
         />
       ) : (

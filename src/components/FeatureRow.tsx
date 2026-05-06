@@ -24,7 +24,7 @@ export function FeatureRow({ title, description, reverse = false, imagePlacehold
           type: "spring", 
           stiffness: 100,
           damping: 15,
-          duration: 0.6 
+          duration: 0.4 
         }}
         className="flex-1 w-full flex justify-center relative"
       >
@@ -36,7 +36,7 @@ export function FeatureRow({ title, description, reverse = false, imagePlacehold
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
         className="flex-1 w-full text-center md:text-left flex flex-col gap-6"
       >
         <h2 className="text-4xl md:text-5xl font-extrabold text-[#58cc02] tracking-tight">
