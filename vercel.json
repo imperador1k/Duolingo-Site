@@ -1,0 +1,18 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/league-reset",
+      "schedule": "59 23 * * 0"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/docs",
+      "destination": "https://me-3d21abaf.mintlify.dev/docs"
+    },
+    {
+      "source": "/docs/:match*",
+      "destination": "https://me-3d21abaf.mintlify.dev/docs/:match*"
+    }
+  ]
+}
