@@ -1,0 +1,96 @@
+---
+title: "Code Conventions"
+description: "Coding standards and conventions for MyDuolingo."
+---
+
+# Code Conventions
+
+Follow these conventions to keep the codebase consistent and maintainable.
+
+## TypeScript
+
+- Use **strict mode** for new files
+- Prefer **interfaces** for object shapes
+- Use **type aliases** for unions and intersections
+- Avoid `any` — use `unknown` when the type is truly unknown
+
+```typescript
+// Good
+interface User {
+  id: string;
+  name: string;
+  email: string;
+}
+
+// Avoid
+const user: any = getData();
+```
+
+## File Naming
+
+- **Components**: PascalCase — `Navbar.tsx`, `Footer.tsx`
+- **Utilities**: kebab-case — `docs-navigation.ts`, `docs-content.ts`
+- **Hooks**: camelCase with `use` prefix — `useTranslation.ts`
+- **Pages**: kebab-case — `quick-start.mdx`
+
+## Component Structure
+
+```typescript
+"use client";
+
+import React from "react";
+
+interface MyComponentProps {
+  title: string;
+  onClick?: () => void;
+}
+
+export function MyComponent({ title, onClick }: MyComponentProps) {
+  return (
+    <div>
+      <h2>{title}</h2>
+      <button onClick={onClick}>Click me</button>
+    </div>
+  );
+}
+```
+
+## CSS and Tailwind
+
+- Use **Tailwind utility classes** exclusively
+- Avoid inline styles unless absolutely necessary
+- Use the project color tokens:
+  - Primary: `#58cc02`
+  - Dark: `#46a302`
+  - Light: `#7ED957`
+
+```typescript
+// Good
+<button className="px-4 py-2 bg-[#58cc02] text-white rounded-xl">
+
+// Avoid
+<button style={{ backgroundColor: "#58cc02" }}>
+```
+
+## Import Order
+
+1. React / Next.js imports
+2. Third-party library imports
+3. Internal imports (using `@/` alias)
+
+```typescript
+import React, { useState } from "react";
+import Link from "next/link";
+
+import { SomeLib } from "some-library";
+
+import { MyComponent } from "@/components/my-component";
+```
+
+<Callout type="info" title="Linting">
+Run `npm run lint` before committing to catch convention violations automatically.
+</Callout>
+
+<Callout type="danger" title="Never Commit Secrets">
+Never commit API keys, tokens, or passwords. Use environment variables and add them to `.gitignore`.
+</Callout>

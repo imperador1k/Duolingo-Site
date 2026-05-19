@@ -1,0 +1,78 @@
+---
+title: "Database Architecture"
+description: "How data is stored and managed in MyDuolingo."
+---
+
+# Database Architecture
+
+This document describes the data layer architecture for MyDuolingo.
+
+## Current Approach
+
+MyDuolingo currently uses a **hybrid data strategy**:
+
+- **Static data** — Stored in TypeScript files under `src/data/`
+- **User data** — Managed through external services (when implemented)
+- **Content** — MDX files in `content/docs/`
+
+## Static Data Structure
+
+```typescript
+// src/data/blog-data.ts
+export interface BlogPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  image: string;
+}
+
+export const blogPosts: BlogPost[] = [
+  // ... posts
+];
+```
+
+## Future Database Plans
+
+For production deployment, we plan to integrate:
+
+### PostgreSQL
+
+- User accounts and profiles
+- Lesson progress and XP
+- Streak tracking
+- Leaderboard data
+
+### Schema Overview
+
+```sql
+-- Users table
+CREATE TABLE users (
+  id UUID PRIMARY KEY,
+  email VARCHAR(255) UNIQUE,
+  name VARCHAR(100),
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Progress table
+CREATE TABLE progress (
+  user_id UUID REFERENCES users(id),
+  lesson_id VARCHAR(50),
+  xp_earned INTEGER,
+  completed_at TIMESTAMP
+);
+```
+
+## Caching Strategy
+
+- **ISR (Incremental Static Regeneration)** — For content pages
+- **SWR/React Query** — For client-side data fetching (future)
+- **Edge caching** — Via Vercel's global CDN
+
+<Callout type="info" title="Note">
+The database layer is currently in planning. The existing static data approach works well for the landing page and documentation.
+</Callout>
+
+<Callout type="warning" title="Migration">
+When migrating to a database, ensure all static data is properly seeded and migration scripts are tested.
+</Callout>

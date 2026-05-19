@@ -1,0 +1,76 @@
+---
+title: "Contributing Guide"
+description: "How to contribute to the MyDuolingo project."
+---
+
+# Contributing Guide
+
+Thank you for your interest in contributing to MyDuolingo! This guide will help you get started.
+
+## Ways to Contribute
+
+There are many ways to contribute to the project:
+
+- **Code** — Fix bugs, add features, improve performance
+- **Documentation** — Improve guides, add examples, fix typos
+- **Design** — Create UI mockups, improve the design system
+- **Translation** — Help translate the app into new languages
+- **Testing** — Report bugs, write tests, review PRs
+
+## Contribution Workflow
+
+### 1. Find an Issue
+
+Browse the [GitHub Issues](https://github.com) and look for:
+
+- `good first issue` — Great for newcomers
+- `help wanted` — Areas where we need assistance
+- `bug` — Things that need fixing
+
+### 2. Fork and Clone
+
+```bash
+git clone https://github.com/your-username/myduolingo.git
+cd myduolingo
+git remote add upstream https://github.com/original-org/myduolingo.git
+```
+
+### 3. Create a Branch
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+Use descriptive branch names:
+
+- `fix/login-bug` for bug fixes
+- `feat/ai-chat` for new features
+- `docs/readme-update` for documentation
+
+### 4. Make Your Changes
+
+Follow the project conventions described in the [Conventions](/docs/contributing/conventions) guide.
+
+### 5. Test Your Changes
+
+```bash
+npm run build
+npm run lint
+```
+
+<Callout type="info" title="Before Submitting">
+Make sure your code passes lint checks and the build succeeds before opening a pull request.
+</Callout>
+
+## Code Review Process
+
+All contributions go through code review:
+
+1. Open a Pull Request with a clear description
+2. Address reviewer feedback
+3. Wait for approval from maintainers
+4. Your PR will be merged
+
+<Callout type="warning" title="Be Patient">
+Reviews may take a few days. Please be patient and responsive to feedback.
+</Callout>

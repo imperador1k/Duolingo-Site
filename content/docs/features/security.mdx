@@ -1,0 +1,93 @@
+---
+title: "Security"
+description: "Security best practices and measures in MyDuolingo."
+---
+
+# Security
+
+This document outlines the security practices and considerations for MyDuolingo.
+
+## Current Security Measures
+
+### Environment Variables
+
+Sensitive data is stored in environment variables, never in code:
+
+```bash
+# .env (never commit this file)
+GOOGLE_AI_API_KEY=your-secret-key-here
+```
+
+### HTTPS
+
+All production traffic should use HTTPS:
+
+- Enforced via Vercel configuration
+- HSTS headers enabled
+- Secure cookie attributes
+
+### Input Sanitization
+
+User inputs are sanitized to prevent XSS:
+
+- React automatically escapes content
+- MDX content is processed at build time
+- No `dangerouslySetInnerHTML` usage
+
+## Best Practices
+
+### API Keys
+
+- Rotate API keys regularly
+- Use separate keys for development and production
+- Monitor usage for anomalies
+
+```typescript
+// Validate env variables at startup
+if (!process.env.GOOGLE_AI_API_KEY) {
+  throw new Error("GOOGLE_AI_API_KEY is required");
+}
+```
+
+### Dependencies
+
+- Keep dependencies up to date
+- Run `npm audit` regularly
+- Review security advisories
+
+```bash
+npm audit
+npm audit fix
+```
+
+### Content Security
+
+- MDX content is version-controlled
+- No user-generated content rendered without sanitization
+- Static assets served from trusted sources
+
+<Callout type="danger" title="Critical">
+Never expose API keys in client-side code. Server-side API routes should handle all sensitive operations.
+</Callout>
+
+## Planned Security Features
+
+When user accounts are implemented:
+
+- **Password hashing** with bcrypt/argon2
+- **Rate limiting** on API routes
+- **CSRF protection** for forms
+- **Session management** with secure cookies
+- **2FA support** for account protection
+
+## Vulnerability Reporting
+
+If you discover a security vulnerability:
+
+1. **Do not** open a public issue
+2. Email the maintainers directly
+3. Allow time for a fix before disclosure
+
+<Callout type="info" title="Responsible Disclosure">
+We follow responsible disclosure practices. Reporters will be credited in the security advisories.
+</Callout>

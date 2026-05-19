@@ -1,0 +1,79 @@
+---
+title: "Authentication"
+description: "How authentication works in MyDuolingo."
+---
+
+# Authentication
+
+This document covers the authentication architecture for MyDuolingo.
+
+## Current State
+
+The landing page currently does not require authentication. Users can browse courses, read documentation, and explore features without an account.
+
+## Planned Authentication
+
+When user accounts are implemented, the authentication system will support:
+
+### Authentication Methods
+
+- **Email/Password** — Traditional sign-up and login
+- **OAuth Providers** — Google, GitHub, Apple
+- **Magic Links** — Passwordless login via email
+
+### Session Management
+
+```typescript
+// Planned session structure
+interface Session {
+  userId: string;
+  email: string;
+  role: "user" | "admin";
+  expiresAt: Date;
+}
+```
+
+## Security Considerations
+
+### Password Hashing
+
+Use **bcrypt** or **argon2** for password hashing:
+
+```typescript
+import bcrypt from "bcrypt";
+
+const saltRounds = 12;
+const hash = await bcrypt.hash(password, saltRounds);
+const isValid = await bcrypt.compare(input, hash);
+```
+
+### JWT Tokens
+
+For API authentication:
+
+- Short-lived access tokens (15 minutes)
+- Long-lived refresh tokens (7 days)
+- Secure, HTTP-only cookies
+
+### CSRF Protection
+
+- Implement CSRF tokens for form submissions
+- Use `SameSite` cookie attribute
+- Validate `Origin` and `Referer` headers
+
+<Callout type="danger" title="Security Warning">
+Never store passwords in plain text. Always use a strong hashing algorithm with a unique salt per password.
+</Callout>
+
+## Future Integration
+
+Authentication will integrate with:
+
+- **Lesson progress tracking**
+- **Streak management**
+- **Leaderboard participation**
+- **AI chat history**
+
+<Callout type="info" title="Status">
+Authentication is planned for a future release. Check the GitHub issues for the latest progress.
+</Callout>

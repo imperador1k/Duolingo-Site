@@ -1,15 +1,21 @@
 import type { NextConfig } from "next";
+import createMDX from "@next/mdx";
+
+const withMDX = createMDX({
+  extension: /\.mdx?$/,
+  options: {
+    providerImportSource: "@mdx-js/react",
+  },
+});
 
 const nextConfig: NextConfig = {
-  // Turbopack root configuration moved to top level
-  // This silences the workspace root warning in Next.js 15+
-  // @ts-ignore
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   turbopack: {
     root: ".",
   },
   images: {
     unoptimized: true,
-  }
+  },
 };
 
-export default nextConfig;
+export default withMDX(nextConfig);

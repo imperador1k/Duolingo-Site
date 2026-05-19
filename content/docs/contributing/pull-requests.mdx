@@ -1,0 +1,70 @@
+---
+title: "Pull Requests"
+description: "How to create and review pull requests for MyDuolingo."
+---
+
+# Pull Requests
+
+This guide explains the pull request process for MyDuolingo.
+
+## Creating a Pull Request
+
+### 1. Push Your Branch
+
+```bash
+git push origin feature/your-feature-name
+```
+
+### 2. Open a PR on GitHub
+
+Navigate to the repository and click **New Pull Request**. Select your branch as the source.
+
+### 3. Fill in the PR Template
+
+A good PR description includes:
+
+- **What** changes does this PR make?
+- **Why** are these changes needed?
+- **How** did you test these changes?
+- **Screenshots** for UI changes
+
+## PR Checklist
+
+Before marking your PR as ready for review:
+
+- [ ] Code follows project conventions
+- [ ] All tests pass
+- [ ] Lint checks pass (`npm run lint`)
+- [ ] Build succeeds (`npm run build`)
+- [ ] No console errors or warnings
+- [ ] Documentation updated if needed
+
+## PR Size
+
+Keep PRs **small and focused**:
+
+- One feature or fix per PR
+- Ideally under 400 lines of changed code
+- Split large changes into multiple PRs
+
+<Callout type="warning" title="Large PRs">
+PRs over 400 lines are harder to review and more likely to have merge conflicts. Consider breaking them up.
+</Callout>
+
+## Review Process
+
+1. **Automated checks** run on every PR (lint, build, tests)
+2. **Maintainers** review the code for quality and correctness
+3. **Feedback** is addressed by the author
+4. **Approval** from at least one maintainer is required
+5. **Merge** is done by a maintainer
+
+## After Merging
+
+- Delete your feature branch
+- Pull the latest `main` branch
+- Start working on your next contribution!
+
+<Callout type="info" title="Thank You!">
+Every contribution matters. Thank you for helping make MyDuolingo better!
+</Callout>

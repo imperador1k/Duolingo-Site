@@ -1,0 +1,92 @@
+---
+title: "Architecture Overview"
+description: "High-level architecture of the MyDuolingo application."
+---
+
+# Architecture Overview
+
+This document provides a high-level view of how MyDuolingo is structured and how its pieces fit together.
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | Next.js 14 (App Router) |
+| Language | TypeScript 5 |
+| Styling | Tailwind CSS 4 |
+| UI Library | React 18 |
+| Animations | Lottie, Framer Motion |
+| AI | Google GenAI SDK |
+| Icons | Lucide React |
+
+## Application Structure
+
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── layout.tsx          # Root layout (providers, navbar, footer)
+│   ├── page.tsx            # Landing page
+│   ├── docs/               # Documentation section
+│   ├── info/               # Info pages (courses, mission, etc.)
+│   ├── legal/              # Legal pages (terms, privacy)
+│   └── blog/               # Blog section
+├── components/             # Shared React components
+│   ├── Navbar.tsx          # Site navigation
+│   ├── Footer.tsx          # Site footer
+│   ├── docs/               # Documentation-specific components
+│   └── ...                 # Feature components
+├── hooks/                  # Custom React hooks
+├── lib/                    # Utilities and configurations
+├── data/                   # Static data (translations, etc.)
+└── index.css               # Global styles
+```
+
+## Rendering Strategy
+
+MyDuolingo uses a mix of rendering strategies:
+
+- **Static Generation (SSG)** — Landing pages, docs, legal pages
+- **Server Components** — Default for all components unless marked `"use client"`
+- **Client Components** — Interactive elements (navbar, modals, animations)
+
+## Key Design Decisions
+
+### App Router
+
+We use Next.js 14 App Router for:
+
+- Better server component support
+- Improved data fetching patterns
+- Built-in streaming and Suspense
+- File-based routing with layouts
+
+### Tailwind CSS
+
+Tailwind provides:
+
+- Utility-first styling
+- Consistent design tokens
+- Responsive design out of the box
+- Small production bundle sizes
+
+<Callout type="info" title="Server vs Client Components">
+Components are server components by default. Only add `"use client"` when you need React hooks, event handlers, or browser APIs.
+</Callout>
+
+## Data Flow
+
+```
+User Request
+    ↓
+Next.js Server
+    ↓
+Server Component renders
+    ↓
+Client Components hydrate
+    ↓
+Interactive UI
+```
+
+<Callout type="warning" title="Performance">
+Minimize client components to reduce JavaScript bundle size. Push interactivity to the edges of your component tree.
+</Callout>

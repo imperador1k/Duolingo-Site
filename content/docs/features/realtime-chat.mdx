@@ -1,0 +1,101 @@
+---
+title: "Real-time Chat"
+description: "How real-time communication works in MyDuolingo."
+---
+
+# Real-time Chat
+
+MyDuolingo includes real-time chat features for learner-to-learner communication and AI-powered conversations.
+
+## Architecture
+
+### Chat Types
+
+1. **AI Chat** — Conversation with an AI language tutor
+2. **Peer Chat** — Real-time messaging between learners (planned)
+
+### AI Chat Flow
+
+```
+User Message
+    ↓
+API Route Handler
+    ↓
+Google GenAI Model
+    ↓
+Formatted Response
+    ↓
+Client Display
+```
+
+## Implementation
+
+### Chat Modal Component
+
+The chat interface is implemented as a modal component:
+
+```typescript
+// components/ChatModal.tsx
+"use client";
+
+import { useState } from "react";
+
+interface Message {
+  role: "user" | "assistant";
+  content: string;
+  timestamp: Date;
+}
+
+export function ChatModal() {
+  const [messages, setMessages] = useState<Message[]>([]);
+  const [input, setInput] = useState("");
+
+  const sendMessage = async () => {
+    // Send to AI API and handle response
+  };
+
+  return (
+    // Chat UI
+  );
+}
+```
+
+### API Route
+
+```typescript
+// app/api/chat/route.ts
+import { GoogleGenerativeAI } from "@google/genai";
+
+export async function POST(request: Request) {
+  const { message, language, level } = await request.json();
+
+  const genAI = new GoogleGenerativeAI(process.env.GOOGLE_AI_API_KEY!);
+  const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+
+  const result = await model.generateContent(message);
+
+  return Response.json({ response: result.response.text() });
+}
+```
+
+## Features
+
+- **Message history** — Conversation context maintained during session
+- **Language detection** — AI adapts to the target language
+- **Correction mode** — AI corrects grammar and provides explanations
+- **Typing indicators** — Visual feedback while AI generates response
+
+<Callout type="warning" title="Rate Limits">
+The free tier of Google AI has rate limits. Implement debounce and caching for production use.
+</Callout>
+
+## Future Enhancements
+
+- WebSocket-based peer chat
+- Voice message support
+- Translation on hover
+- Message reactions
+
+<Callout type="info" title="Coming Soon">
+Peer-to-peer chat is planned for a future release using WebSockets or Server-Sent Events.
+</Callout>

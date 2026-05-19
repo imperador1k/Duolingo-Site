@@ -1,0 +1,86 @@
+---
+title: "AI Pipeline"
+description: "How the AI-powered features work in MyDuolingo."
+---
+
+# AI Pipeline
+
+MyDuolingo uses Google's Generative AI SDK to power intelligent features like conversation practice and personalized learning.
+
+## Overview
+
+The AI pipeline consists of:
+
+1. **User Input** — Text or voice from the learner
+2. **Prompt Engineering** — Structured prompts with context
+3. **AI Processing** — Google GenAI model inference
+4. **Response Handling** — Parsing and formatting the output
+5. **UI Rendering** — Displaying the response to the user
+
+## Implementation
+
+### API Setup
+
+```typescript
+import { GoogleGenerativeAI } from "@google/genai";
+
+const genAI = new GoogleGenerativeAI(process.env.GOOGLE_AI_API_KEY!);
+const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+```
+
+### Conversation Practice
+
+The AI acts as a language tutor:
+
+```typescript
+const conversationPrompt = `
+You are a language tutor helping a student practice ${targetLanguage}.
+Correct their mistakes gently and provide explanations.
+Keep responses concise and encouraging.
+Student level: ${level}
+`;
+
+const result = await model.generateContent({
+  contents: [{ role: "user", parts: [{ text: conversationPrompt }] }],
+});
+```
+
+### Lesson Generation
+
+AI can generate personalized exercises:
+
+```typescript
+const lessonPrompt = `
+Create 5 multiple-choice questions for a ${level} level ${targetLanguage} learner.
+Topic: ${topic}
+Format as JSON with question, options, correctAnswer, and explanation.
+`;
+```
+
+## Environment Variables
+
+| Variable | Description |
+|----------|-------------|
+| `GOOGLE_AI_API_KEY` | Google AI Studio API key |
+
+<Callout type="danger" title="API Key Security">
+Never commit your API key to version control. Use environment variables and add `.env` to `.gitignore`.
+</Callout>
+
+## Error Handling
+
+```typescript
+try {
+  const result = await model.generateContent(prompt);
+  return result.response.text();
+} catch (error) {
+  if (error.status === 429) {
+    return "Rate limit reached. Please try again in a moment.";
+  }
+  return "An error occurred. Please try again.";
+}
+```
+
+<Callout type="info" title="Cost Management">
+Monitor your API usage in the Google AI Studio dashboard. Set budget alerts to avoid unexpected charges.
+</Callout>

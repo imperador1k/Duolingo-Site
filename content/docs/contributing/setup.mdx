@@ -1,0 +1,86 @@
+---
+title: "Development Setup"
+description: "Set up your development environment for MyDuolingo."
+---
+
+# Development Setup
+
+This guide covers the recommended development environment setup for working on MyDuolingo.
+
+## Required Tools
+
+### Node.js
+
+Install Node.js 18 or later. We recommend using [nvm](https://github.com/nvm-sh/nvm) for version management:
+
+```bash
+nvm install 18
+nvm use 18
+```
+
+### Code Editor
+
+We recommend [VS Code](https://code.visualstudio.com/) with these extensions:
+
+- **ESLint** — Linting support
+- **Prettier** — Code formatting
+- **Tailwind CSS IntelliSense** — Autocomplete for Tailwind classes
+- **ES7+ React Snippets** — React code snippets
+
+### Git
+
+Make sure Git is installed and configured:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+```
+
+## Recommended VS Code Settings
+
+Create `.vscode/settings.json` in your workspace:
+
+```json
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["clsx\\(([^)]*)\\)", "\"([^\"]*)\""]
+  ]
+}
+```
+
+## Project Structure Overview
+
+```
+myduolingo/
+├── src/
+│   ├── app/           # Next.js pages and layouts
+│   ├── components/    # React components
+│   ├── hooks/         # Custom hooks
+│   ├── lib/           # Utilities and configs
+│   └── data/          # Static data
+├── public/            # Static assets
+├── content/           # MDX content files
+└── package.json       # Dependencies and scripts
+```
+
+<Callout type="info" title="Tip">
+Run `npm run dev` to start the development server with hot reload enabled.
+</Callout>
+
+## Common Commands
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run start` | Run production build |
+| `npm run lint` | Run ESLint checks |
+
+<Callout type="warning" title="Windows Users">
+If you are on Windows, use PowerShell or Git Bash for running commands. Some shell scripts may not work in Command Prompt.
+</Callout>

@@ -1,0 +1,99 @@
+---
+title: "Gamification"
+description: "How gamification mechanics work in MyDuolingo."
+---
+
+# Gamification
+
+MyDuolingo uses game design elements to make language learning engaging and addictive.
+
+## Core Mechanics
+
+### XP (Experience Points)
+
+Users earn XP for completing activities:
+
+| Activity | XP Reward |
+|----------|-----------|
+| Complete a lesson | 10-20 XP |
+| Perfect lesson (no mistakes) | +5 bonus XP |
+| Daily goal achieved | 15 XP |
+| Streak milestone | 50 XP |
+
+### Streaks
+
+A streak counts consecutive days of learning:
+
+- **Day 1-6** — Building momentum
+- **Day 7** — Weekly milestone
+- **Day 30** — Monthly achievement
+- **Day 100+** — Dedicated learner
+
+### Leaderboards
+
+Users are grouped into leagues and compete weekly:
+
+- **Bronze** → **Silver** → **Gold** → **Diamond**
+- Top performers advance to the next league
+- Bottom performers are demoted
+
+## Implementation
+
+### XP Tracking
+
+```typescript
+interface UserProgress {
+  totalXP: number;
+  currentStreak: number;
+  longestStreak: number;
+  lessonsCompleted: number;
+  league: "bronze" | "silver" | "gold" | "diamond";
+}
+```
+
+### Achievement System
+
+```typescript
+interface Achievement {
+  id: string;
+  name: string;
+  description: string;
+  icon: string;
+  unlocked: boolean;
+  unlockedAt?: Date;
+}
+
+const achievements: Achievement[] = [
+  {
+    id: "first-lesson",
+    name: "First Steps",
+    description: "Complete your first lesson",
+    icon: "/badges/first-lesson.svg",
+    unlocked: false,
+  },
+  {
+    id: "streak-7",
+    name: "Week Warrior",
+    description: "Maintain a 7-day streak",
+    icon: "/badges/streak-7.svg",
+    unlocked: false,
+  },
+];
+```
+
+## UI Components
+
+Gamification elements use the Duolingo design system:
+
+- **3D buttons** with press-down animations
+- **Animated badges** using Lottie
+- **Progress bars** with green fill animations
+- **Celebration effects** for milestones
+
+<Callout type="info" title="Psychology">
+Gamification taps into intrinsic motivation: autonomy, mastery, and purpose. The goal is to make learning feel like play.
+</Callout>
+
+<Callout type="warning" title="Balance">
+Avoid over-gamification. The focus should remain on learning, not just collecting points.
+</Callout>

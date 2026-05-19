@@ -1,0 +1,89 @@
+---
+title: "Deployment"
+description: "How to deploy MyDuolingo to production."
+---
+
+# Deployment
+
+This guide covers deploying MyDuolingo to various platforms.
+
+## Deploy to Vercel (Recommended)
+
+Vercel is the easiest way to deploy Next.js applications.
+
+### Steps
+
+1. Push your code to GitHub
+2. Import your repository on [Vercel](https://vercel.com)
+3. Configure environment variables
+4. Click Deploy
+
+### Vercel Configuration
+
+The project includes a `vercel.json` for custom configuration:
+
+```json
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev"
+}
+```
+
+## Deploy with Docker
+
+### Dockerfile
+
+```dockerfile
+FROM node:18-alpine AS builder
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
+
+FROM node:18-alpine AS runner
+WORKDIR /app
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package.json ./package.json
+
+EXPOSE 3000
+CMD ["npm", "start"]
+```
+
+### Build and Run
+
+```bash
+docker build -t myduolingo .
+docker run -p 3000:3000 -e GOOGLE_AI_API_KEY=your-key myduolingo
+```
+
+## Deploy to Other Platforms
+
+### Netlify
+
+```bash
+npm install -g netlify-cli
+netlify deploy --prod
+```
+
+### Railway
+
+Connect your GitHub repository to Railway and it will auto-deploy on push.
+
+## Post-Deployment Checklist
+
+- [ ] Environment variables are set
+- [ ] Custom domain is configured
+- [ ] HTTPS is enabled
+- [ ] Error monitoring is set up
+- [ ] Analytics are configured
+
+<Callout type="warning" title="Build Size">
+Monitor your build size. Large bundles can slow down deployment and page loads. Use `npm run build` locally to check.
+</Callout>
+
+<Callout type="info" title="CI/CD">
+Set up GitHub Actions for automated testing and deployment on every push to main.
+</Callout>

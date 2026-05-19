@@ -1,0 +1,76 @@
+---
+title: "Environment Variables"
+description: "All environment variables used in MyDuolingo."
+---
+
+# Environment Variables
+
+MyDuolingo uses environment variables for configuration. This reference lists all supported variables.
+
+## Required Variables
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `GOOGLE_AI_API_KEY` | Google AI Studio API key for AI features | `AIzaSy...` |
+
+## Optional Variables
+
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `NODE_ENV` | Environment mode | `development` |
+| `NEXT_PUBLIC_SITE_URL` | Base URL for the site | `http://localhost:3000` |
+
+## Setup
+
+### Development
+
+1. Copy the example file:
+
+```bash
+cp .env.example .env
+```
+
+2. Fill in your values:
+
+```bash
+GOOGLE_AI_API_KEY=your-api-key-here
+```
+
+3. Restart the development server:
+
+```bash
+npm run dev
+```
+
+### Production
+
+Set environment variables in your deployment platform:
+
+**Vercel:**
+- Go to Project Settings → Environment Variables
+- Add each variable for Production, Preview, and Development
+
+**Docker:**
+```bash
+docker run -e GOOGLE_AI_API_KEY=your-key myduolingo
+```
+
+## Client vs Server Variables
+
+Variables prefixed with `NEXT_PUBLIC_` are exposed to the browser:
+
+```typescript
+// Available in client components
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+
+// Server-only (never sent to browser)
+const apiKey = process.env.GOOGLE_AI_API_KEY;
+```
+
+<Callout type="danger" title="Security Warning">
+Never prefix sensitive keys with `NEXT_PUBLIC_`. These variables will be bundled into the client-side JavaScript and exposed to anyone who views the source.
+</Callout>
+
+<Callout type="info" title="Tip">
+Use `.env.local` for overrides that should not be committed. This file is in `.gitignore` by default.
+</Callout>
