@@ -81,7 +81,7 @@ export function DocsSidebar({ mobileOpen, onMobileClose }: DocsSidebarProps) {
   return (
     <>
       {/* Desktop sidebar */}
-      <aside className="hidden lg:block w-72 flex-shrink-0 border-r-2 border-stone-200 bg-white sticky top-20 h-[calc(100vh-5rem)] overflow-y-auto">
+      <aside className="hidden lg:block w-56 flex-shrink-0 border-r-2 border-stone-200 bg-white sticky top-20 h-[calc(100vh-5rem)] overflow-y-auto">
         {sidebarContent}
       </aside>
 

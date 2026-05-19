@@ -32,6 +32,7 @@ export function Footer() {
         <div className="flex flex-col gap-3">
           <h3 className="text-white font-black uppercase text-base mb-2">{t('footer.support')}</h3>
           <Link href="/info/doubts" className="hover:text-white transition-colors">{t('footer.support.doubts')}</Link>
+          <Link href="/docs" className="hover:text-white transition-colors">Documentation</Link>
         </div>
         <div className="flex flex-col gap-3">
           <h3 className="text-white font-black uppercase text-base mb-2">{t('footer.legal')}</h3>

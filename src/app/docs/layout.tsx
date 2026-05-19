@@ -17,7 +17,7 @@ export default function DocsLayout({
       <div className="flex">
         <DocsSidebar mobileOpen={sidebarOpen} onMobileClose={() => setSidebarOpen(false)} />
         <main className="flex-1 min-w-0">
-          <div className="max-w-4xl mx-auto px-4 md:px-8 lg:px-12 py-8">
+          <div className="max-w-5xl mx-auto px-4 md:px-8 lg:px-12 py-8">
             {children}
           </div>
         </main>

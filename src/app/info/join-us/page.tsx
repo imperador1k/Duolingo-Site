@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { motion } from 'motion/react';
-import { Rocket, Code, Palette, Languages, Users, Heart, Zap, Globe, Sparkles, ArrowRight, CheckCircle, Github, Eye } from 'lucide-react';
+import { Rocket, Code, Palette, Languages, Users, Heart, Zap, Globe, Sparkles, ArrowRight, CheckCircle, Github, Eye, GitFork, Terminal, GitPullRequest, Cpu } from 'lucide-react';
 import { LazyLottie } from '@/components/LazyLottie';
 import { useTranslation } from '@/hooks/useTranslation';
 
@@ -137,205 +137,151 @@ export default function JoinUsPage() {
         </div>
       </section>
 
-      {/* Collaboration Area - High-Contrast Editorial Stage */}
-      <section className="relative min-h-[900px] md:min-h-[1100px] bg-slate-50 overflow-hidden flex flex-col items-center justify-center py-20">
-        {/* Artistic Particles */}
-        <div className="absolute inset-0 pointer-events-none">
-          {[...Array(20)].map((_, i) => (
-            <motion.div
-              key={i}
-              className={`absolute w-2 h-2 rounded-full ${['bg-[#58cc02]', 'bg-[#1cb0f6]', 'bg-[#ffc800]'][i % 3]} opacity-20`}
-              animate={{
-                x: [Math.random() * 1000, Math.random() * 1000],
-                y: [Math.random() * 1000, Math.random() * 1000],
-                scale: [1, 1.5, 1],
-              }}
-              transition={{
-                duration: 10 + Math.random() * 20,
-                repeat: Infinity,
-                ease: "linear"
-              }}
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-              }}
-            />
-          ))}
-        </div>
-
-        {/* Content Overlay */}
-        <div className="relative z-20 text-center mb-16 md:mb-24 px-6 max-w-4xl">
-          <motion.span 
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            className="inline-block px-6 py-2 bg-white border-2 border-gray-100 rounded-full text-[#58cc02] font-black text-sm uppercase tracking-[0.3em] shadow-sm mb-8"
-          >
+      {/* Collaboration Steps Grid - Replaced 3D Stage */}
+      <section className="mb-40 bg-gray-50/50 rounded-[50px] border-2 border-dashed border-gray-200 p-8 md:p-16">
+        <div className="mb-16 text-center max-w-3xl mx-auto space-y-4">
+          <span className="inline-block px-5 py-2 bg-white border-2 border-gray-100 rounded-full text-[#58cc02] font-black text-sm uppercase tracking-[0.2em] shadow-xs">
             {t('info.join_us.gh.badge')}
-          </motion.span>
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-[100px] font-black leading-none tracking-tight mb-8"
-          >
-            <span className="text-[#042c60] block md:inline">{t('info.join_us.gh.title_1')}</span>
-            <span className="text-[#58cc02] md:ml-6">{t('info.join_us.gh.title_2')}</span>
-          </motion.h2>
-          <motion.p 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            className="text-xl md:text-2xl text-slate-500 font-bold max-w-2xl mx-auto leading-relaxed"
-          >
-            {t('info.join_us.gh.desc')}
-          </motion.p>
+          </span>
+          <h2 className="text-4xl md:text-5xl font-black text-[#3c3c3c] tracking-tight">
+            {t('info.join_us.collab.title')}
+          </h2>
+          <p className="text-xl text-[#777] font-bold leading-relaxed">
+            {t('info.join_us.collab.desc')}
+          </p>
         </div>
 
-        {/* Floating Device Modules Stage */}
-        <div className="relative w-full max-w-7xl mx-auto px-4 h-[500px] md:h-[600px] mb-20">
-          
-          {/* Module 1: Join Mission (Smartphone Left) */}
-          <motion.div
-            initial={{ opacity: 0, x: -100, rotate: -15 }}
-            whileInView={{ opacity: 1, x: 0, rotate: -5 }}
-            className="absolute left-[5%] top-[10%] w-[220px] md:w-[300px] aspect-9/19 bg-[#58cc02] rounded-[40px] md:rounded-[60px] p-4 shadow-[0_40px_80px_-15px_rgba(88,204,2,0.3)] z-10 hidden lg:block"
-          >
-            <div className="w-full h-full bg-[#042c60] rounded-[30px] md:rounded-[50px] overflow-hidden relative border-4 border-[#46a302]">
-               <div className="absolute top-4 left-1/2 -translate-x-1/2 w-16 h-4 bg-black/20 rounded-full" />
-               <div className="flex flex-col items-center justify-center h-full text-center p-6 space-y-4">
-                  <motion.div 
-                    animate={{ scale: [1, 1.1, 1] }}
-                    transition={{ repeat: Infinity, duration: 2 }}
-                    className="w-20 h-20 bg-[#58cc02] rounded-full flex items-center justify-center shadow-lg"
-                  >
-                    <Rocket className="w-10 h-10 text-white" />
-                  </motion.div>
-                  <h3 className="text-white font-black text-xl leading-tight">{t('info.join_us.gh.device1_title')}</h3>
-                  <span className="text-[#58cc02] text-xs font-bold bg-white/10 px-3 py-1 rounded-full uppercase tracking-tighter">{t('info.join_us.gh.device1_badge')}</span>
-               </div>
-            </div>
-          </motion.div>
-
-          {/* Module 2: Stack Browser (Desktop Center) */}
-          <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            className="absolute left-1/2 -translate-x-1/2 top-0 w-[90%] md:w-[700px] aspect-video bg-[#58cc02] rounded-[30px] md:rounded-[40px] p-4 md:p-6 shadow-[0_60px_100px_-20px_rgba(88,204,2,0.4)] z-30"
-          >
-            <div className="w-full h-full bg-white rounded-[20px] md:rounded-[30px] overflow-hidden border-4 border-[#46a302] flex flex-col">
-              <div className="h-10 bg-gray-100 flex items-center px-4 gap-2 border-b">
-                <div className="flex gap-1.5">
-                  <div className="w-3 h-3 rounded-full bg-[#ff4b4b]" />
-                  <div className="w-3 h-3 rounded-full bg-[#ffc800]" />
-                  <div className="w-3 h-3 rounded-full bg-[#58cc02]" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {[
+            {
+              title: t('info.join_us.steps.step1.title'),
+              desc: t('info.join_us.steps.step1.desc'),
+              icon: <GitFork className="w-8 h-8 text-[#1cb0f6]" />,
+              badge: "Fork",
+              color: "border-[#1cb0f6] bg-[#1cb0f6]/5 text-[#1cb0f6]",
+              code: "github.com/imperador1k/myduolingo"
+            },
+            {
+              title: t('info.join_us.steps.step2.title'),
+              desc: t('info.join_us.steps.step2.desc'),
+              icon: <Terminal className="w-8 h-8 text-[#58cc02]" />,
+              badge: "Clone",
+              color: "border-[#58cc02] bg-[#58cc02]/5 text-[#58cc02]",
+              code: "git clone https://github.com/your-username/myduolingo.git"
+            },
+            {
+              title: t('info.join_us.steps.step3.title'),
+              desc: t('info.join_us.steps.step3.desc'),
+              icon: <Cpu className="w-8 h-8 text-[#ffc800]" />,
+              badge: "Build",
+              color: "border-[#ffc800] bg-[#ffc800]/5 text-[#ffc800]",
+              code: "npm install && npm run dev"
+            },
+            {
+              title: t('info.join_us.steps.step4.title'),
+              desc: t('info.join_us.steps.step4.desc'),
+              icon: <GitPullRequest className="w-8 h-8 text-purple-500" />,
+              badge: "PR",
+              color: "border-purple-500 bg-purple-500/5 text-purple-500",
+              code: "git push origin feature/awesome-updates"
+            }
+          ].map((step, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.1, type: "spring", stiffness: 100 }}
+              whileHover={{ y: -8 }}
+              className="group p-8 rounded-[40px] bg-white border-2 border-b-6 border-[#e5e5e5] hover:border-[#1cb0f6] transition-all duration-300 relative flex flex-col justify-between"
+            >
+              <div className="space-y-6">
+                <div className="flex justify-between items-center">
+                  <div className="p-4 rounded-2xl bg-gray-50 group-hover:bg-white border border-[#e5e5e5] transition-all shadow-xs">
+                    {step.icon}
+                  </div>
+                  <span className={`text-xs font-black px-3 py-1 rounded-full border ${step.color}`}>
+                    {step.badge}
+                  </span>
                 </div>
-                <div className="flex-1 ml-4 bg-white rounded-md h-6 flex items-center px-3 border border-gray-200">
-                  <span className="text-[10px] text-gray-400 font-bold">github.com/imperador1k/myduolingo</span>
+                <div className="space-y-2">
+                  <h3 className="text-2xl font-black text-[#3c3c3c]">{step.title}</h3>
+                  <p className="text-[#777] font-bold text-base leading-relaxed">{step.desc}</p>
                 </div>
               </div>
-              <div className="flex-1 p-4 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start">
-                <div className="space-y-4 text-center md:text-left flex-1">
-                  <span className="inline-block px-3 py-1 bg-[#ddf4ff] text-[#1cb0f6] rounded-full text-[10px] font-black uppercase tracking-widest">{t('info.join_us.gh.device2_tab')}</span>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-3 justify-center md:justify-start">
-                      <div className="w-10 h-10 rounded-xl bg-gray-50 border flex items-center justify-center font-black text-[#58cc02]">N</div>
-                      <span className="font-black text-gray-700">Next.js 15</span>
-                    </div>
-                    <div className="flex items-center gap-3 justify-center md:justify-start">
-                      <div className="w-10 h-10 rounded-xl bg-gray-50 border flex items-center justify-center font-black text-[#1cb0f6]">T</div>
-                      <span className="font-black text-gray-700">Tailwind v4</span>
-                    </div>
-                    <div className="flex items-center gap-3 justify-center md:justify-start">
-                      <div className="w-10 h-10 rounded-xl bg-gray-50 border flex items-center justify-center font-black text-[#d33131]">G</div>
-                      <span className="font-black text-gray-700">Gemini AI</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="w-full md:w-48 p-4 bg-slate-50 rounded-2xl border-2 border-dashed border-gray-200 flex flex-col items-center justify-center gap-2">
-                   <div className="w-12 h-12 bg-white rounded-full shadow-sm flex items-center justify-center">
-                     <Sparkles className="w-6 h-6 text-[#ffc800]" />
-                   </div>
-                   <span className="text-xs text-gray-400 font-black uppercase tracking-tighter">{t('info.join_us.gh.device2_impact')}</span>
-                   <span className="text-center font-black text-gray-700 text-sm">{t('info.join_us.gh.device2_tag')}</span>
-                </div>
-              </div>
-            </div>
-          </motion.div>
 
-          {/* Module 3: Contrib Engine (Smartphone Right) */}
-          <motion.div
-            initial={{ opacity: 0, x: 100, rotate: 15 }}
-            whileInView={{ opacity: 1, x: 0, rotate: 5 }}
-            className="absolute right-[5%] top-[10%] w-[220px] md:w-[300px] aspect-9/19 bg-[#58cc02] rounded-[40px] md:rounded-[60px] p-4 shadow-[0_40px_80px_-15px_rgba(88,204,2,0.3)] z-10 hidden lg:block"
-          >
-            <div className="w-full h-full bg-white rounded-[30px] md:rounded-[50px] overflow-hidden relative border-4 border-[#46a302] flex flex-col">
-               <div className="absolute top-4 left-1/2 -translate-x-1/2 w-16 h-4 bg-gray-100 rounded-full" />
-               <div className="p-6 pt-12 flex-1 flex flex-col gap-4">
-                  <div className="flex gap-2 justify-center">
-                    <button className="flex-1 py-3 bg-[#58cc02] rounded-xl text-white font-black text-[10px] shadow-[0_4px_0_0_#46a302]">{t('info.join_us.gh.device3_btn1')}</button>
-                    <button className="flex-1 py-3 bg-[#1cb0f6] rounded-xl text-white font-black text-[10px] shadow-[0_4px_0_0_#1899d6]">{t('info.join_us.gh.device3_btn2')}</button>
-                  </div>
-                  <div className="flex-1 bg-gray-50 rounded-2xl border-2 border-gray-100 p-4 space-y-3 overflow-hidden">
-                    <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest border-b pb-2">{t('info.join_us.gh.device3_title')}</div>
-                    {[...Array(6)].map((_, i) => (
-                      <div key={i} className="flex items-center gap-3">
-                        <div className="w-6 h-6 rounded-full bg-gray-200" />
-                        <div className="h-2 w-16 bg-gray-200 rounded-full" />
-                      </div>
-                    ))}
-                    <div className="text-[8px] font-black text-[#58cc02] uppercase pt-2">+ {t('info.join_us.areas.community')} {t('info.join_us.gh.contrib_suffix')}</div>
-                  </div>
-               </div>
-            </div>
-          </motion.div>
-        </div>
-
-        {/* Call To Action - Classic 3D Duolingo Style */}
-        <div className="relative z-30 px-6 w-full flex justify-center">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98, y: 4 }}
-            onClick={() => window.open('https://github.com/imperador1k/myduolingo', '_blank')}
-            className="group relative w-fit px-10 md:px-20 py-6 md:py-8 bg-[#58cc02] text-white font-black text-xl md:text-4xl rounded-[25px] md:rounded-[35px] border-b-8 border-[#46a302] active:border-b-0 transition-all flex items-center justify-center gap-4 md:gap-8"
-          >
-            <Github className="w-8 h-8 md:w-14 md:h-14" />
-            <span>{t('info.join_us.gh.cta')}</span>
-            <ArrowRight className="w-8 h-8 md:w-12 md:h-12 group-hover:translate-x-4 transition-transform" />
-          </motion.button>
+              {step.code && (
+                <div className="mt-6 p-3 rounded-2xl bg-gray-50 border border-gray-100 font-mono text-xs text-gray-500 select-all overflow-x-auto whitespace-nowrap scrollbar-thin">
+                  {step.code}
+                </div>
+              )}
+            </motion.div>
+          ))}
         </div>
       </section>
 
+      {/* Developer Docs Referral Banner */}
+      <section className="mb-20 bg-white rounded-[40px] p-8 md:p-12 overflow-hidden relative border-2 border-b-6 border-[#e5e5e5] shadow-xs max-w-7xl mx-auto">
+        <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+          <div className="space-y-4 max-w-2xl text-center lg:text-left">
+            <div className="flex items-center gap-2 justify-center lg:justify-start">
+              <span className="inline-block px-3 py-1 bg-gray-100 text-[#1cb0f6] text-xs font-black rounded-full uppercase tracking-wider">
+                Developer Resources
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-black tracking-tight text-[#3c3c3c]">
+              {t('info.join_us.docs.title')}
+            </h2>
+            <p className="text-[#777] font-bold text-base md:text-lg leading-relaxed">
+              {t('info.join_us.docs.desc')}
+            </p>
+          </div>
 
-      {/* CTA Section - Absolute Elite */}
-      <section className="text-center relative py-20 bg-gray-50/50 rounded-[80px] border-2 border-dashed border-gray-200">
+          <motion.a
+            href="/docs"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="group px-8 py-4 bg-[#1cb0f6] text-white font-black text-sm uppercase tracking-wider rounded-2xl border-b-4 border-[#1899d6] hover:border-b-0 hover:translate-y-[4px] transition-all flex items-center gap-2 shadow-xs w-full lg:w-auto justify-center"
+          >
+            <Code className="w-5 h-5" />
+            <span>{t('info.join_us.docs.cta')}</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </motion.a>
+        </div>
+      </section>
+
+      {/* Consolidated CTA Section - Rescaled and Elegant */}
+      <section className="text-center relative py-16 bg-white rounded-[50px] border-2 border-[#e5e5e5] border-b-8 shadow-xs max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="space-y-12 px-6"
+          className="space-y-8 px-6"
         >
-          <div className="space-y-6">
-            <h2 className="text-6xl md:text-[80px] font-black text-[#3c3c3c] tracking-tight leading-none">
-              {t('info.join_us.cta.title')} <br/> <span className="text-[#1cb0f6] drop-shadow-sm">{t('info.join_us.cta.title_accent')}</span>
+          <div className="space-y-4">
+            <h2 className="text-4xl md:text-5xl font-black text-[#3c3c3c] tracking-tight leading-tight">
+              {t('info.join_us.cta.title')} <span className="text-[#1cb0f6]">{t('info.join_us.cta.title_accent')}</span>
             </h2>
-            <p className="text-2xl text-[#777] font-bold max-w-2xl mx-auto">
+            <p className="text-xl text-[#777] font-bold max-w-xl mx-auto leading-relaxed">
               {t('info.join_us.cta.desc')}
             </p>
           </div>
           
-          <div className="flex flex-col items-center gap-8">
+          <div className="flex flex-col items-center gap-6">
             <motion.button
-              whileHover={{ scale: 1.05, y: -8 }}
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="group relative w-fit px-10 md:px-20 py-6 md:py-8 bg-[#1cb0f6] text-white font-black text-xl md:text-3xl rounded-[30px] md:rounded-[35px] shadow-[0_12px_0_0_#1899d6] md:shadow-[0_15px_0_0_#1899d6] hover:shadow-[0_20px_0_0_#1899d6] active:shadow-none active:translate-y-[15px] transition-all flex items-center gap-4 md:gap-6"
+              className="group relative w-fit px-8 py-4 bg-[#58cc02] text-white font-black text-sm uppercase tracking-wider rounded-2xl border-b-4 border-[#46a302] hover:border-b-0 hover:translate-y-[4px] transition-all flex items-center gap-3 shadow-xs"
               onClick={() => window.open('https://github.com/imperador1k/myduolingo', '_blank')}
             >
-              <Github className="w-8 h-8 md:w-10 md:h-10" />
-              {t('info.join_us.cta.button')}
-              <ArrowRight className="w-8 h-8 md:w-9 md:h-9 group-hover:translate-x-3 transition-transform" />
+              <Github className="w-5 h-5" />
+              <span>{t('info.join_us.cta.button')}</span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform" />
             </motion.button>
             
-            <div className="flex flex-col items-center gap-2">
-              <span className="text-[#afafaf] font-black text-sm uppercase tracking-[0.4em]">{t('info.join_us.cta.contact')}</span>
-              <span className="text-2xl text-[#1cb0f6] font-black underline decoration-4 underline-offset-8">contacto@miguelweb.dev</span>
+            <div className="flex flex-col items-center gap-1.5 pt-4 border-t border-gray-100 w-full max-w-xs">
+              <span className="text-[#afafaf] font-black text-xs uppercase tracking-widest">{t('info.join_us.cta.contact')}</span>
+              <span className="text-lg text-[#1cb0f6] font-black hover:underline cursor-pointer">contacto@miguelweb.dev</span>
             </div>
           </div>
         </motion.div>
