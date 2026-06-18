@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion } from 'motion/react';
-import { Shield, FileText, ArrowLeft } from 'lucide-react';
+import { Shield, FileText, Scale, ArrowLeft } from 'lucide-react';
 import { useTranslation } from '@/hooks/useTranslation';
 import { LanguageDropdown } from '@/components/LanguageDropdown';
 
@@ -38,6 +38,12 @@ export default function LegalLayout({
                 className={`flex items-center gap-2 font-black uppercase text-[11px] tracking-widest transition-colors ${pathname === '/legal/privacy' ? 'text-[#1cb0f6]' : 'text-gray-400 hover:text-gray-600'}`}
               >
                 <Shield size={14} /> {t('footer.legal.privacy')}
+              </Link>
+              <Link 
+                href="/legal/copyright" 
+                className={`flex items-center gap-2 font-black uppercase text-[11px] tracking-widest transition-colors ${pathname === '/legal/copyright' ? 'text-[#58cc02]' : 'text-gray-400 hover:text-gray-600'}`}
+              >
+                <Scale size={14} /> {t('footer.legal.copyright')}
               </Link>
             </nav>
 

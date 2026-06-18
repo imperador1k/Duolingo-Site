@@ -82,7 +82,7 @@ export const ChatModal: React.FC<ChatModalProps> = ({ isOpen, onClose }) => {
                 <div className="space-y-10">
                   <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start group">
                     <div className="shrink-0 w-24 h-24 rounded-3xl overflow-hidden shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-500">
-                      <img src="/images/chat_translation.png" alt="Instant Translation" className="w-full h-full object-cover" />
+                      <img src="/images/chat_translation.webp" alt="Instant Translation" className="w-full h-full object-cover" />
                     </div>
                     <div className="text-center sm:text-left">
                       <h3 className="font-black text-[#1f2937] text-xl mb-2 uppercase tracking-wide">
@@ -96,7 +96,7 @@ export const ChatModal: React.FC<ChatModalProps> = ({ isOpen, onClose }) => {
 
                   <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start group">
                     <div className="shrink-0 w-24 h-24 rounded-3xl overflow-hidden shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-500">
-                      <img src="/images/chat_support.png" alt="App Support" className="w-full h-full object-cover" />
+                      <img src="/images/chat_support.webp" alt="App Support" className="w-full h-full object-cover" />
                     </div>
                     <div className="text-center sm:text-left">
                       <h3 className="font-black text-[#1f2937] text-xl mb-2 uppercase tracking-wide">
@@ -110,7 +110,7 @@ export const ChatModal: React.FC<ChatModalProps> = ({ isOpen, onClose }) => {
 
                   <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start group">
                     <div className="shrink-0 w-24 h-24 rounded-3xl overflow-hidden shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-500">
-                      <img src="/images/chat_grammar.png" alt="Grammar Explanations" className="w-full h-full object-cover" />
+                      <img src="/images/chat_grammar.webp" alt="Grammar Explanations" className="w-full h-full object-cover" />
                     </div>
                     <div className="text-center sm:text-left">
                       <h3 className="font-black text-[#1f2937] text-xl mb-2 uppercase tracking-wide">

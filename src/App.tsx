@@ -76,7 +76,7 @@ export default function App() {
       <header className={`fixed top-0 left-0 right-0 z-50 bg-white h-20 border-b-2 border-gray-100 px-6 md:px-12 flex items-center justify-between transition-shadow duration-300 ${isScrolled ? 'shadow-md' : ''}`}>
         {/* Logo Placeholder */}
         <div className="flex items-center gap-2 cursor-pointer hover:scale-105 transition-transform">
-          <img src="/duolingo_icon_2.png" alt="MyDuolingo Icon" className="w-10 h-10 object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextElementSibling!.classList.remove('hidden'); }} />
+          <img src="/duolingo_icon.svg" alt="MyDuolingo Icon" className="w-10 h-10 object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextElementSibling!.classList.remove('hidden'); }} />
           <div className="hidden w-10 h-10 bg-[#58cc02] rounded-xl flex items-center justify-center shadow-[0_4px_0_0_#58a700]">
             <span className="text-white font-black text-2xl">M</span>
           </div>

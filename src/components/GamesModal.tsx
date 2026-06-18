@@ -82,7 +82,7 @@ export const GamesModal: React.FC<GamesModalProps> = ({ isOpen, onClose }) => {
                 <div className="space-y-10">
                   <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start group">
                     <div className="shrink-0 w-24 h-24 rounded-3xl overflow-hidden shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-500">
-                      <img src="/images/game_swipe.png" alt="Swipe Game" className="w-full h-full object-cover" />
+                      <img src="/images/game_swipe.webp" alt="Swipe Game" className="w-full h-full object-cover" />
                     </div>
                     <div className="text-center sm:text-left">
                       <h3 className="font-black text-[#1f2937] text-xl mb-2 uppercase tracking-wide">
@@ -96,7 +96,7 @@ export const GamesModal: React.FC<GamesModalProps> = ({ isOpen, onClose }) => {
 
                   <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start group">
                     <div className="shrink-0 w-24 h-24 rounded-3xl overflow-hidden shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-500">
-                      <img src="/images/game_skyfall.png" alt="Skyfall Game" className="w-full h-full object-cover" />
+                      <img src="/images/game_skyfall.webp" alt="Skyfall Game" className="w-full h-full object-cover" />
                     </div>
                     <div className="text-center sm:text-left">
                       <h3 className="font-black text-[#1f2937] text-xl mb-2 uppercase tracking-wide">
@@ -110,7 +110,7 @@ export const GamesModal: React.FC<GamesModalProps> = ({ isOpen, onClose }) => {
 
                   <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start group">
                     <div className="shrink-0 w-24 h-24 rounded-3xl overflow-hidden shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-500">
-                      <img src="/images/game_immersion.png" alt="Immersion Game" className="w-full h-full object-cover" />
+                      <img src="/images/game_immersion.webp" alt="Immersion Game" className="w-full h-full object-cover" />
                     </div>
                     <div className="text-center sm:text-left">
                       <h3 className="font-black text-[#1f2937] text-xl mb-2 uppercase tracking-wide">

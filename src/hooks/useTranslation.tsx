@@ -80,6 +80,7 @@ const translations = {
     "footer.legal": "Termos e privacidade",
     "footer.legal.terms": "Termos",
     "footer.legal.privacy": "Privacidade",
+    "footer.legal.copyright": "Direitos Autorais",
     "footer.social": "Social",
 
     // MENU - Info
@@ -352,7 +353,19 @@ const translations = {
     "legal.privacy.section4.desc": "Não recolhemos conscientemente dados de menores de 18 anos sem autorização legal.",
     "legal.privacy.section5.title": "Os Seus Direitos",
     "legal.privacy.section5.desc": "Poderá sempre solicitar cópias ou a eliminação dos seus dados. Respeitamos o modo 'Não Rastrear'.",
-    "legal.privacy.footer": "A sua confiança é o motor da MyDuolingo."
+    "legal.privacy.footer": "A sua confiança é o motor da MyDuolingo.",
+
+    "legal.copyright.title": "Direitos Autorais",
+    "legal.copyright.badge": "Aviso Legal",
+    "legal.copyright.intro.title": "Um Projeto de Fã",
+    "legal.copyright.intro.desc": "O MyDuolingo é um projeto de hobby, criado com paixão e dedicação para ajudar pessoas a aprender idiomas de forma divertida. Este projeto não é afiliado, patrocinado ou aprovado pelo Duolingo oficial.",
+    "legal.copyright.no_intent.title": "Sem Intenção de Concorrência",
+    "legal.copyright.no_intent.desc": "O MyDuolingo não tem qualquer intenção de competir ou substituir a aplicação oficial do Duolingo. Pelo contrário, este projeto nasceu da admiração pelo trabalho incrível que a equipa do Duolingo faz. A minha motivação foi aprender e criar algo que celebrasse o conceito de aprendizagem de idiomas.",
+    "legal.copyright.made_with_love.title": "Feito com Amor e Dedicação",
+    "legal.copyright.made_with_love.desc": "Cada linha de código, cada animação e cada detalhe visual foi pensado com carinho. O MyDuolingo é um projeto open-source que representa meses de estudo, dedicação e amor pela programação e pelo ensino de idiomas.",
+    "legal.copyright.acknowledgment.title": "Agradecimento ao Duolingo",
+    "legal.copyright.acknowledgment.desc": "Gostaria de agradecer à equipa do Duolingo por criar uma plataforma tão inspiradora. As mascotes, os lotties e a identidade visual única do Duolingo serviram de inspiração para este projeto, que procura homenagear e celebrar o seu trabalho, não copiá-lo.",
+    "legal.copyright.footer": "Feito com 💚 por um fã do Duolingo."
   },
   es: {
     "header.login": "Entrar",
@@ -429,6 +442,7 @@ const translations = {
     "footer.legal": "Términos y privacidad",
     "footer.legal.terms": "Términos",
     "footer.legal.privacy": "Privacidad",
+    "footer.legal.copyright": "Derechos de Autor",
     "footer.social": "Social",
 
     "menu.mission": "Misión",
@@ -684,7 +698,19 @@ const translations = {
     "legal.privacy.section4.desc": "No recopilamos conscientemente datos de menores de 18 años sin autorización legal.",
     "legal.privacy.section5.title": "Sus Derechos",
     "legal.privacy.section5.desc": "Siempre podrá solicitar copias o la eliminación de sus datos. Respetamos el modo 'No rastrear'.",
-    "legal.privacy.footer": "Su confianza es el motor de MyDuolingo."
+    "legal.privacy.footer": "Su confianza es el motor de MyDuolingo.",
+
+    "legal.copyright.title": "Derechos de Autor",
+    "legal.copyright.badge": "Aviso Legal",
+    "legal.copyright.intro.title": "Un Proyecto de Fan",
+    "legal.copyright.intro.desc": "MyDuolingo es un proyecto hobby, creado con pasión y dedicación para ayudar a las personas a aprender idiomas de forma divertida. Este proyecto no está afiliado, patrocinado ni aprobado por Duolingo oficial.",
+    "legal.copyright.no_intent.title": "Sin Intención de Competencia",
+    "legal.copyright.no_intent.desc": "MyDuolingo no tiene ninguna intención de competir ni sustituir a la aplicación oficial de Duolingo. Al contrario, este proyecto nació de la admiración por el increíble trabajo que el equipo de Duolingo realiza. Mi motivación fue aprender y crear algo que celebrara el concepto de aprendizaje de idiomas.",
+    "legal.copyright.made_with_love.title": "Hecho con Amor y Dedicación",
+    "legal.copyright.made_with_love.desc": "Cada línea de código, cada animación y cada detalle visual fue pensado con cariño. MyDuolingo es un proyecto open-source que representa meses de estudio, dedicación y amor por la programación y la enseñanza de idiomas.",
+    "legal.copyright.acknowledgment.title": "Agradecimiento a Duolingo",
+    "legal.copyright.acknowledgment.desc": "Quisiera agradecer al equipo de Duolingo por crear una plataforma tan inspiradora. Las mascotas, los lotties y la identidad visual única de Duolingo sirvieron de inspiración para este proyecto, que busca homenajear y celebrar su trabajo, no copiarlo.",
+    "legal.copyright.footer": "Hecho con 💚 por un fan de Duolingo."
   },
   fr: {
     "header.login": "Se connecter",
@@ -761,6 +787,7 @@ const translations = {
     "footer.legal": "Conditions et confidentialité",
     "footer.legal.terms": "Conditions",
     "footer.legal.privacy": "Confidentialité",
+    "footer.legal.copyright": "Droits d'Auteur",
     "footer.social": "Social",
 
     "menu.mission": "Mission",
@@ -1016,7 +1043,19 @@ const translations = {
     "legal.privacy.section4.desc": "Nous ne collectons pas sciemment de données auprès de mineurs de moins de 18 ans sans autorisation légale.",
     "legal.privacy.section5.title": "Vos droits",
     "legal.privacy.section5.desc": "Vous pouvez toujours demander des copies ou la suppression de vos données. Nous respectons le mode 'Ne pas suivre'.",
-    "legal.privacy.footer": "Votre confiance est le moteur de MyDuolingo."
+    "legal.privacy.footer": "Votre confiance est le moteur de MyDuolingo.",
+
+    "legal.copyright.title": "Droits d'Auteur",
+    "legal.copyright.badge": "Avis Légal",
+    "legal.copyright.intro.title": "Un Projet de Fan",
+    "legal.copyright.intro.desc": "MyDuolingo est un projet hobby, créé avec passion et dévouement pour aider les gens à apprendre des langues de manière amusante. Ce projet n'est pas affilié, sponsorisé ou approuvé par Duolingo officiel.",
+    "legal.copyright.no_intent.title": "Aucune Intention de Concurrence",
+    "legal.copyright.no_intent.desc": "MyDuolingo n'a aucune intention de concurrencer ou de remplacer l'application officielle de Duolingo. Au contraire, ce projet est né de l'admiration pour le travail incroyable que l'équipe de Duolingo accompli. Ma motivation était d'apprendre et de créer quelque chose qui célèbre le concept d'apprentissage des langues.",
+    "legal.copyright.made_with_love.title": "Fait avec Amour et Dévouement",
+    "legal.copyright.made_with_love.desc": "Chaque ligne de code, chaque animation et chaque détail visuel a été pensé avec soin. MyDuolingo est un projet open-source qui représente des mois d'étude, de dévouement et d'amour pour la programmation et l'enseignement des langues.",
+    "legal.copyright.acknowledgment.title": "Remerciement à Duolingo",
+    "legal.copyright.acknowledgment.desc": "Je tiens à remercier l'équipe de Duolingo pour avoir créé une plateforme si inspirante. Les mascottes, les lotties et l'identité visuelle unique de Duolingo ont servi d'inspiration pour ce projet, qui cherche à honorer et célébrer leur travail, pas à le copier.",
+    "legal.copyright.footer": "Fait avec 💚 par un fan de Duolingo."
   },
   de: {
     "header.login": "Anmelden",
@@ -1093,6 +1132,7 @@ const translations = {
     "footer.legal": "Bedingungen & Datenschutz",
     "footer.legal.terms": "Bedingungen",
     "footer.legal.privacy": "Datenschutz",
+    "footer.legal.copyright": "Urheberrecht",
     "footer.social": "Social",
 
     "menu.mission": "Mission",
@@ -1346,7 +1386,19 @@ const translations = {
     "legal.privacy.section4.desc": "Wir sammeln wissentlich keine Daten von Minderjährigen unter 18 Jahren ohne gesetzliche Erlaubnis.",
     "legal.privacy.section5.title": "Ihre Rechte",
     "legal.privacy.section5.desc": "Sie können jederzeit Kopien oder die Löschung Ihrer Daten anfordern. Wir respektieren den 'Do Not Track'-Modus.",
-    "legal.privacy.footer": "Ihr Vertrauen ist der Motor von MyDuolingo."
+    "legal.privacy.footer": "Ihr Vertrauen ist der Motor von MyDuolingo.",
+
+    "legal.copyright.title": "Urheberrecht",
+    "legal.copyright.badge": "Rechtlicher Hinweis",
+    "legal.copyright.intro.title": "Ein Fan-Projekt",
+    "legal.copyright.intro.desc": "MyDuolingo ist ein Hobbyprojekt, das mit Leidenschaft und Hingabe entwickelt wurde, um Menschen beim spielerischen Sprachenlernen zu helfen. Dieses Projekt wird nicht von Duolingo unterstützt, gesponsert oder genehmigt.",
+    "legal.copyright.no_intent.title": "Keine Wettbewerbsabsicht",
+    "legal.copyright.no_intent.desc": "MyDuolingo hat nicht die Absicht, mit der offiziellen Duolingo-App zu konkurrieren oder sie zu ersetzen. Im Gegenteil, dieses Projekt entstand aus der Bewunderung für die unglaubliche Arbeit des Duolingo-Teams. Meine Motivation war es, zu lernen und etwas zu schaffen, das das Konzept des Sprachenlernens feiert.",
+    "legal.copyright.made_with_love.title": "Gemacht mit Liebe und Hingabe",
+    "legal.copyright.made_with_love.desc": "Jede Zeile Code, jede Animation und jedes visuelle Detail wurde mit Sorgfalt gestaltet. MyDuolingo ist ein Open-Source-Projekt, das Monate des Lernens, der Hingabe und der Liebe zur Programmierung und zum Sprachunterricht repräsentiert.",
+    "legal.copyright.acknowledgment.title": "Dank an Duolingo",
+    "legal.copyright.acknowledgment.desc": "Ich möchte mich beim Duolingo-Team bedanken, dass es eine so inspirierende Plattform geschaffen hat. Die Maskottchen, die Lotties und die einzigartige visuelle Identität von Duolingo dienten als Inspiration für dieses Projekt, das ihre Arbeit würdigen und feiern soll, nicht kopieren.",
+    "legal.copyright.footer": "Gemacht mit 💚 von einem Duolingo-Fan."
   },
   it: {
     "header.login": "Accedi",
@@ -1423,6 +1475,7 @@ const translations = {
     "footer.legal": "Termini e privacy",
     "footer.legal.terms": "Termini",
     "footer.legal.privacy": "Privacy",
+    "footer.legal.copyright": "Diritti d'Autore",
     "footer.social": "Social",
 
     "menu.mission": "Missione",
@@ -1664,7 +1717,19 @@ const translations = {
     "legal.privacy.section4.desc": "Non raccogliamo consapevolmente dati da minori di 18 anni senza autorizzazione legale.",
     "legal.privacy.section5.title": "I vostri diritti",
     "legal.privacy.section5.desc": "È sempre possibile richiedere copie o la cancellazione dei propri dati. Rispettiamo la modalità 'Non tracciare'.",
-    "legal.privacy.footer": "La vostra fiducia è il motore di MyDuolingo."
+    "legal.privacy.footer": "La vostra fiducia è il motore di MyDuolingo.",
+
+    "legal.copyright.title": "Diritti d'Autore",
+    "legal.copyright.badge": "Avviso Legale",
+    "legal.copyright.intro.title": "Un Progetto di Fan",
+    "legal.copyright.intro.desc": "MyDuolingo è un progetto hobby, creato con passione e dedizione per aiutare le persone a imparare le lingue in modo divertente. Questo progetto non è affiliato, sponsorizzato o approvato da Duolingo ufficiale.",
+    "legal.copyright.no_intent.title": "Nessuna Intenzione di Concorrenza",
+    "legal.copyright.no_intent.desc": "MyDuolingo non ha alcuna intenzione di competere o sostituire l'applicazione ufficiale di Duolingo. Al contrario, questo progetto è nato dall'ammirazione per l'incredibile lavoro che il team di Duolingo svolge. La mia motivazione era imparare e creare qualcosa che celebrasse il concetto di apprendimento delle lingue.",
+    "legal.copyright.made_with_love.title": "Fatto con Amore e Dedizione",
+    "legal.copyright.made_with_love.desc": "Ogni riga di codice, ogni animazione e ogni dettaglio visivo è stato pensato con cura. MyDuolingo è un progetto open-source che rappresenta mesi di studio, dedizione e amore per la programmazione e l'insegnamento delle lingue.",
+    "legal.copyright.acknowledgment.title": "Ringraziamento a Duolingo",
+    "legal.copyright.acknowledgment.desc": "Vorrei ringraziare il team di Duolingo per aver creato una piattaforma così stimolante. Le mascotte, i lottie e l'identità visiva unica di Duolingo sono stati di ispirazione per questo progetto, che cerca di onorare e celebrare il loro lavoro, non di copiarlo.",
+    "legal.copyright.footer": "Fatto con 💚 da un fan di Duolingo."
   },
   en: {
     "header.login": "Log in",
@@ -1742,6 +1807,7 @@ const translations = {
     "footer.legal": "Terms & Privacy",
     "footer.legal.terms": "Terms",
     "footer.legal.privacy": "Privacy",
+    "footer.legal.copyright": "Copyright",
     "footer.social": "Social",
 
     "menu.mission": "Mission",
@@ -2003,7 +2069,19 @@ const translations = {
     "legal.privacy.section4.desc": "We do not knowingly collect data from minors under 18 without legal authorization.",
     "legal.privacy.section5.title": "Your Rights",
     "legal.privacy.section5.desc": "You may always request copies or deletion of your data. We respect 'Do Not Track' mode.",
-    "legal.privacy.footer": "Your trust is the engine of MyDuolingo."
+    "legal.privacy.footer": "Your trust is the engine of MyDuolingo.",
+
+    "legal.copyright.title": "Copyright Notice",
+    "legal.copyright.badge": "Legal Notice",
+    "legal.copyright.intro.title": "A Fan Project",
+    "legal.copyright.intro.desc": "MyDuolingo is a hobby project, created with passion and dedication to help people learn languages in a fun way. This project is not affiliated, sponsored, or approved by official Duolingo.",
+    "legal.copyright.no_intent.title": "No Intention to Compete",
+    "legal.copyright.no_intent.desc": "MyDuolingo has no intention whatsoever to compete with or replace the official Duolingo application. On the contrary, this project was born out of admiration for the incredible work the Duolingo team does. My motivation was to learn and create something that would celebrate the concept of language learning.",
+    "legal.copyright.made_with_love.title": "Made with Love and Dedication",
+    "legal.copyright.made_with_love.desc": "Every line of code, every animation, and every visual detail was crafted with care. MyDuolingo is an open-source project that represents months of study, dedication, and love for programming and language teaching.",
+    "legal.copyright.acknowledgment.title": "Acknowledgments to Duolingo",
+    "legal.copyright.acknowledgment.desc": "I would like to thank the Duolingo team for creating such an inspiring platform. The mascots, lotties, and unique visual identity of Duolingo served as inspiration for this project, which seeks to honor and celebrate their work, not copy it.",
+    "legal.copyright.footer": "Made with 💚 by a Duolingo fan."
   }
 } as const;
 

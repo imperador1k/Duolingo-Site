@@ -101,7 +101,7 @@ export const AIModal: React.FC<AIModalProps> = ({ isOpen, onClose }) => {
                   {/* Item 1: Error Explanation */}
                   <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start group">
                     <div className="shrink-0 w-24 h-24 rounded-3xl overflow-hidden shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-500">
-                      <img src="/images/ai_error.png" alt="AI Error Explanation" className="w-full h-full object-cover" />
+                      <img src="/images/ai_error.webp" alt="AI Error Explanation" className="w-full h-full object-cover" />
                     </div>
                     <div className="text-center sm:text-left">
                       <h3 className="font-black text-[#1f2937] text-xl mb-2 uppercase tracking-wide">
@@ -116,7 +116,7 @@ export const AIModal: React.FC<AIModalProps> = ({ isOpen, onClose }) => {
                   {/* Item 2: Chat 24/7 */}
                   <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start group">
                     <div className="shrink-0 w-24 h-24 rounded-3xl overflow-hidden shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-500">
-                      <img src="/images/ai_chat.png" alt="AI Personalized Chat" className="w-full h-full object-cover" />
+                      <img src="/images/ai_chat.webp" alt="AI Personalized Chat" className="w-full h-full object-cover" />
                     </div>
                     <div className="text-center sm:text-left">
                       <h3 className="font-black text-[#1f2937] text-xl mb-2 uppercase tracking-wide">
@@ -131,7 +131,7 @@ export const AIModal: React.FC<AIModalProps> = ({ isOpen, onClose }) => {
                   {/* Item 3: Dynamic Challenges */}
                   <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start group">
                     <div className="shrink-0 w-24 h-24 rounded-3xl overflow-hidden shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-500">
-                      <img src="/images/ai_challenges.png" alt="AI Dynamic Challenges" className="w-full h-full object-cover" />
+                      <img src="/images/ai_challenges.webp" alt="AI Dynamic Challenges" className="w-full h-full object-cover" />
                     </div>
                     <div className="text-center sm:text-left">
                       <h3 className="font-black text-[#1f2937] text-xl mb-2 uppercase tracking-wide">

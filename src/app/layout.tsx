@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "MyDuolingo - Aprender idiomas grátis de forma divertida",
   description: "A melhor forma de aprender um idioma grátis. MyDuolingo é divertido, eficaz e baseado em ciência. Começa já a tua jornada!",
   keywords: ["aprender idiomas", "grátis", "espanhol", "inglês", "francês", "alemão", "italiano", "duolingo clone"],
-  icons: "/duolingo_icon_2.png",
+  icons: "/duolingo_icon.svg",
 };
 
 export default function RootLayout({

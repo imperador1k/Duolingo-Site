@@ -22,7 +22,7 @@ export function Navbar() {
       <Link href="/" className="flex items-center gap-2 cursor-pointer hover:scale-105 transition-transform">
         <div className="relative w-10 h-10" style={{ position: 'relative' }}>
           <Image 
-            src="/duolingo_icon_2.png" 
+            src="/duolingo_icon.svg" 
             alt="MyDuolingo Icon" 
             fill
             className="object-contain"

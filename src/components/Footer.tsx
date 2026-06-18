@@ -38,6 +38,7 @@ export function Footer() {
           <h3 className="text-white font-black uppercase text-base mb-2">{t('footer.legal')}</h3>
           <Link href="/legal/terms" className="hover:text-white transition-colors">{t('footer.legal.terms')}</Link>
           <Link href="/legal/privacy" className="hover:text-white transition-colors">{t('footer.legal.privacy')}</Link>
+          <Link href="/legal/copyright" className="hover:text-white transition-colors">{t('footer.legal.copyright')}</Link>
         </div>
         <div className="flex flex-col gap-3">
           <h3 className="text-white font-black uppercase text-base mb-2">{t('footer.social')}</h3>

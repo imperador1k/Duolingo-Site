@@ -125,7 +125,7 @@ export const MultiPlatformSection: React.FC<{ title?: string }> = ({ title }) =>
           >
             <div className="w-[100px] h-[210px] sm:w-[130px] sm:h-[280px] md:w-[180px] md:h-[380px] bg-[#3c3c3c] rounded-3xl sm:rounded-[2.2rem] md:rounded-[3rem] border-4 sm:border-8 border-[#3c3c3c] shadow-[10px_10px_0_rgba(0,0,0,0.05)] relative overflow-hidden">
                <img 
-                 src="/images/print-phone-1.png" 
+                 src="/images/print-phone-1.webp" 
                  alt="Mobile Interface 1" 
                  className="w-full h-full object-cover rounded-2xl sm:rounded-[1.8rem] md:rounded-[2.2rem]"
                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
@@ -157,7 +157,7 @@ export const MultiPlatformSection: React.FC<{ title?: string }> = ({ title }) =>
                </div>
                {/* Real Desktop Print */}
                <img 
-                 src="/images/print-desktop.png" 
+                 src="/images/print-desktop.webp" 
                  alt="Desktop Interface" 
                  className="w-full h-full object-cover object-top"
                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
@@ -182,7 +182,7 @@ export const MultiPlatformSection: React.FC<{ title?: string }> = ({ title }) =>
           >
             <div className="w-[100px] h-[210px] sm:w-[130px] sm:h-[280px] md:w-[180px] md:h-[380px] bg-[#3c3c3c] rounded-3xl sm:rounded-[2.2rem] md:rounded-[3rem] border-4 sm:border-8 border-[#3c3c3c] shadow-[-10px_10px_0_rgba(0,0,0,0.05)] relative overflow-hidden">
                <img 
-                 src="/images/print-phone-2.png" 
+                 src="/images/print-phone-2.webp" 
                  alt="Mobile Interface 2" 
                  className="w-full h-full object-cover rounded-2xl sm:rounded-[1.8rem] md:rounded-[2.2rem]"
                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
