@@ -136,14 +136,7 @@ export default function InfoLayout({
 
         {/* Conteúdo da Página */}
         <main className="flex-1 md:pl-12">
-          <motion.div
-            key={pathname}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-          >
-            {children}
-          </motion.div>
+          {children}
         </main>
       </div>
     </div>
