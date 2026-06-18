@@ -7,6 +7,7 @@ export interface BlogArticle {
   content: string;
   date: string;
   category: string;
+  categoryKey: string;
   author: string;
   image: string;
   featured?: boolean;
@@ -18,6 +19,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     title: "A História da Nossa App",
     summary: "Descubra como transformamos linhas de código em aventuras linguísticas globais.",
     category: "Bastidores",
+    categoryKey: "bastidores",
     author: "Equipa MyDuolingo",
     date: "28 de Abril, 2026",
     image: "/images/duolingo1.webp",
@@ -29,6 +31,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     title: "A Psicologia por trás das Ligas",
     summary: "Porque é que somos tão competitivos? Entenda a ciência da dopamina nas Ligas Semanais.",
     category: "Gamificação",
+    categoryKey: "gamificacao",
     author: "Dr. Linguística",
     date: "27 de Abril, 2026",
     image: "/images/duolingo10.webp",
@@ -44,6 +47,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     title: "Segredos do Arcade Hub",
     summary: "Dicas de mestre para bater recordes no Meteor Swipe e no Vocabulary Sprint.",
     category: "Dicas",
+    categoryKey: "dicas",
     author: "Pro Gamer",
     date: "26 de Abril, 2026",
     image: "/images/duolingo25.webp",
@@ -61,6 +65,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     title: "Como a IA decide o que aprendes?",
     summary: "Entenda os bastidores do Marco, o nosso tutor inteligente.",
     category: "Tecnologia",
+    categoryKey: "tecnologia",
     author: "Equipa IA",
     date: "25 de Abril, 2026",
     image: "/images/duolingo15.webp",
@@ -71,6 +76,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     title: "Wall of Love: O Top 10",
     summary: "Os testemunhos mais emocionantes e engraçados da nossa comunidade este mês.",
     category: "Comunidade",
+    categoryKey: "comunidade",
     author: "Equipa Social",
     date: "24 de Abril, 2026",
     image: "/images/duolingo38.webp",

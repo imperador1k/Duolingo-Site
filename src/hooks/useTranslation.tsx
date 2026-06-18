@@ -83,6 +83,43 @@ const translations = {
     "footer.legal.copyright": "Direitos Autorais",
     "footer.social": "Social",
 
+    // BLOG
+    "blog.page.title": "Blog",
+    "blog.page.subtitle": "Descobre tudo sobre o MyDuolingo",
+    "blog.search.placeholder": "Procurar artigos, guias ou novidades...",
+    "blog.search.all": "Todas",
+    "blog.featured.read": "Ler Artigo Principal",
+    "blog.card.read_more": "Continuar a ler",
+    "blog.card.by": "Por",
+    "blog.back": "VOLTAR AO BLOG",
+    "blog.not_found.title": "Artigo não encontrado :(",
+    "blog.not_found.message": "Não encontramos nenhum artigo com esse nome... Tenta pesquisar por outra coisa!",
+    "blog.newsletter.title": "Fica a par de tudo!",
+    "blog.newsletter.placeholder": "O teu melhor e-mail...",
+    "blog.newsletter.button": "Subscrever",
+    "blog.newsletter.desc": "Junta-te a 50,000+ alunos que recebem as nossas dicas semanais de fluência.",
+    "blog.related.title": "Continuar a ler",
+    "blog.read_time": "min de leitura",
+
+    // BLOG - Categories
+    "blog.category.bastidores": "Bastidores",
+    "blog.category.gamificacao": "Gamificação",
+    "blog.category.dicas": "Dicas",
+    "blog.category.tecnologia": "Tecnologia",
+    "blog.category.comunidade": "Comunidade",
+
+    // BLOG - Articles
+    "blog.article.historia-da-nossa-app.title": "A História da Nossa App",
+    "blog.article.historia-da-nossa-app.summary": "Descubra como transformamos linhas de código em aventuras linguísticas globais.",
+    "blog.article.psicologia-das-ligas.title": "A Psicologia por trás das Ligas",
+    "blog.article.psicologia-das-ligas.summary": "Porque é que somos tão competitivos? Entenda a ciência da dopamina nas Ligas Semanais.",
+    "blog.article.segredos-do-arcade.title": "Segredos do Arcade Hub",
+    "blog.article.segredos-do-arcade.summary": "Dicas de mestre para bater recordes no Meteor Swipe e no Vocabulary Sprint.",
+    "blog.article.ia-na-aprendizagem.title": "Como a IA decide o que aprendes?",
+    "blog.article.ia-na-aprendizagem.summary": "Entenda os bastidores do Marco, o nosso tutor inteligente.",
+    "blog.article.wall-of-love-melhores.title": "Wall of Love: O Top 10",
+    "blog.article.wall-of-love-melhores.summary": "Os testemunhos mais emocionantes e engraçados da nossa comunidade este mês.",
+
     // MENU - Info
     "menu.mission": "Missão",
     "menu.team": "Equipa",
@@ -445,6 +482,43 @@ const translations = {
     "footer.legal.copyright": "Derechos de Autor",
     "footer.social": "Social",
 
+    // BLOG
+    "blog.page.title": "Blog",
+    "blog.page.subtitle": "Descúbrelo todo sobre MyDuolingo",
+    "blog.search.placeholder": "Buscar artículos, guías o novedades...",
+    "blog.search.all": "Todas",
+    "blog.featured.read": "Leer Artículo Principal",
+    "blog.card.read_more": "Seguir leyendo",
+    "blog.card.by": "Por",
+    "blog.back": "VOLVER AL BLOG",
+    "blog.not_found.title": "Artículo no encontrado :(",
+    "blog.not_found.message": "No encontramos ningún artículo con ese nombre... ¡Intenta buscar otra cosa!",
+    "blog.newsletter.title": "¡Entérate de todo!",
+    "blog.newsletter.placeholder": "Tu mejor e-mail...",
+    "blog.newsletter.button": "Suscribirse",
+    "blog.newsletter.desc": "Únete a más de 50,000 estudiantes que reciben nuestros consejos semanales de fluidez.",
+    "blog.related.title": "Seguir leyendo",
+    "blog.read_time": "min de lectura",
+
+    // BLOG - Categories
+    "blog.category.bastidores": "Bastidores",
+    "blog.category.gamificacao": "Gamificación",
+    "blog.category.dicas": "Consejos",
+    "blog.category.tecnologia": "Tecnología",
+    "blog.category.comunidade": "Comunidad",
+
+    // BLOG - Articles
+    "blog.article.historia-da-nossa-app.title": "La Historia de Nuestra App",
+    "blog.article.historia-da-nossa-app.summary": "Descubre cómo transformamos líneas de código en aventuras lingüísticas globales.",
+    "blog.article.psicologia-das-ligas.title": "La Psicología detrás de las Ligas",
+    "blog.article.psicologia-das-ligas.summary": "¿Por qué somos tan competitivos? Entiende la ciencia de la dopamina en las Ligas Semanales.",
+    "blog.article.segredos-do-arcade.title": "Secretos del Arcade Hub",
+    "blog.article.segredos-do-arcade.summary": "Consejos de maestro para batir récords en Meteor Swipe y Vocabulary Sprint.",
+    "blog.article.ia-na-aprendizagem.title": "¿Cómo decide la IA lo que aprendes?",
+    "blog.article.ia-na-aprendizagem.summary": "Conoce los entresijos de Marco, nuestro tutor inteligente.",
+    "blog.article.wall-of-love-melhores.title": "Wall of Love: El Top 10",
+    "blog.article.wall-of-love-melhores.summary": "Los testimonios más emocionantes y divertidos de nuestra comunidad este mes.",
+
     "menu.mission": "Misión",
     "menu.team": "Equipo",
     "menu.courses": "Cursos",
@@ -789,6 +863,43 @@ const translations = {
     "footer.legal.privacy": "Confidentialité",
     "footer.legal.copyright": "Droits d'Auteur",
     "footer.social": "Social",
+
+    // BLOG
+    "blog.page.title": "Blog",
+    "blog.page.subtitle": "Découvrez tout sur MyDuolingo",
+    "blog.search.placeholder": "Rechercher des articles, guides ou actualités...",
+    "blog.search.all": "Toutes",
+    "blog.featured.read": "Lire l'article principal",
+    "blog.card.read_more": "Continuer à lire",
+    "blog.card.by": "Par",
+    "blog.back": "RETOUR AU BLOG",
+    "blog.not_found.title": "Article introuvable :(",
+    "blog.not_found.message": "Nous n'avons trouvé aucun article avec ce nom... Essayez de chercher autre chose !",
+    "blog.newsletter.title": "Restez informé !",
+    "blog.newsletter.placeholder": "Votre meilleur e-mail...",
+    "blog.newsletter.button": "S'abonner",
+    "blog.newsletter.desc": "Rejoins plus de 50 000 étudiants qui reçoivent nos conseils hebdomadaires de fluidité.",
+    "blog.related.title": "Continuer à lire",
+    "blog.read_time": "min de lecture",
+
+    // BLOG - Categories
+    "blog.category.bastidores": "Coulisses",
+    "blog.category.gamificacao": "Gamification",
+    "blog.category.dicas": "Astuces",
+    "blog.category.tecnologia": "Technologie",
+    "blog.category.comunidade": "Communauté",
+
+    // BLOG - Articles
+    "blog.article.historia-da-nossa-app.title": "L'Histoire de Notre App",
+    "blog.article.historia-da-nossa-app.summary": "Découvrez comment nous avons transformé des lignes de code en aventures linguistiques mondiales.",
+    "blog.article.psicologia-das-ligas.title": "La Psychologie derrière les Ligues",
+    "blog.article.psicologia-das-ligas.summary": "Pourquoi sommes-nous si compétitifs ? Comprenez la science de la dopamine dans les Ligues Hebdomadaires.",
+    "blog.article.segredos-do-arcade.title": "Secrets de l'Arcade Hub",
+    "blog.article.segredos-do-arcade.summary": "Conseils de maître pour battre des records dans Meteor Swipe et Vocabulary Sprint.",
+    "blog.article.ia-na-aprendizagem.title": "Comment l'IA décide-t-elle ce que vous apprenez ?",
+    "blog.article.ia-na-aprendizagem.summary": "Découvrez les coulisses de Marco, notre tuteur intelligent.",
+    "blog.article.wall-of-love-melhores.title": "Wall of Love : Le Top 10",
+    "blog.article.wall-of-love-melhores.summary": "Les témoignages les plus émouvants et amusants de notre communauté ce mois-ci.",
 
     "menu.mission": "Mission",
     "menu.team": "Équipe",
@@ -1135,6 +1246,43 @@ const translations = {
     "footer.legal.copyright": "Urheberrecht",
     "footer.social": "Social",
 
+    // BLOG
+    "blog.page.title": "Blog",
+    "blog.page.subtitle": "Erfahre alles über MyDuolingo",
+    "blog.search.placeholder": "Artikel, Anleitungen oder Neuigkeiten suchen...",
+    "blog.search.all": "Alle",
+    "blog.featured.read": "Hauptartikel lesen",
+    "blog.card.read_more": "Weiterlesen",
+    "blog.card.by": "Von",
+    "blog.back": "ZURÜCK ZUM BLOG",
+    "blog.not_found.title": "Artikel nicht gefunden :(",
+    "blog.not_found.message": "Wir haben keinen Artikel mit diesem Namen gefunden... Versuche, etwas anderes zu suchen!",
+    "blog.newsletter.title": "Bleib auf dem Laufenden!",
+    "blog.newsletter.placeholder": "Deine beste E-Mail...",
+    "blog.newsletter.button": "Abonnieren",
+    "blog.newsletter.desc": "Schließe dich über 50.000+ Lernenden an, die unsere wöchentlichen Tipps erhalten.",
+    "blog.related.title": "Weiterlesen",
+    "blog.read_time": "Min. Lesezeit",
+
+    // BLOG - Categories
+    "blog.category.bastidores": "Hinter den Kulissen",
+    "blog.category.gamificacao": "Gamification",
+    "blog.category.dicas": "Tipps",
+    "blog.category.tecnologia": "Technologie",
+    "blog.category.comunidade": "Community",
+
+    // BLOG - Articles
+    "blog.article.historia-da-nossa-app.title": "Die Geschichte unserer App",
+    "blog.article.historia-da-nossa-app.summary": "Entdecke, wie wir Codezeilen in globale Sprachabenteuer verwandelt haben.",
+    "blog.article.psicologia-das-ligas.title": "Die Psychologie hinter den Ligen",
+    "blog.article.psicologia-das-ligas.summary": "Warum sind wir so wettbewerbsorientiert? Verstehe die Wissenschaft des Dopamins in den Wochenligen.",
+    "blog.article.segredos-do-arcade.title": "Geheimnisse des Arcade Hub",
+    "blog.article.segredos-do-arcade.summary": "Meistertipps, um Rekorde in Meteor Swipe und Vocabulary Sprint zu brechen.",
+    "blog.article.ia-na-aprendizagem.title": "Wie entscheidet die KI, was du lernst?",
+    "blog.article.ia-na-aprendizagem.summary": "Erfahre mehr über Marco, unseren intelligenten Tutor.",
+    "blog.article.wall-of-love-melhores.title": "Wall of Love: Die Top 10",
+    "blog.article.wall-of-love-melhores.summary": "Die bewegendsten und lustigsten Erfahrungsberichte unserer Community in diesem Monat.",
+
     "menu.mission": "Mission",
     "menu.team": "Team",
     "menu.courses": "Kurse",
@@ -1478,6 +1626,43 @@ const translations = {
     "footer.legal.copyright": "Diritti d'Autore",
     "footer.social": "Social",
 
+    // BLOG
+    "blog.page.title": "Blog",
+    "blog.page.subtitle": "Scopri tutto su MyDuolingo",
+    "blog.search.placeholder": "Cerca articoli, guide o novità...",
+    "blog.search.all": "Tutte",
+    "blog.featured.read": "Leggi l'articolo principale",
+    "blog.card.read_more": "Continua a leggere",
+    "blog.card.by": "Da",
+    "blog.back": "TORNA AL BLOG",
+    "blog.not_found.title": "Articolo non trovato :(",
+    "blog.not_found.message": "Non abbiamo trovato nessun articolo con questo nome... Prova a cercare qualcos'altro!",
+    "blog.newsletter.title": "Rimani aggiornato!",
+    "blog.newsletter.placeholder": "La tua migliore e-mail...",
+    "blog.newsletter.button": "Iscriviti",
+    "blog.newsletter.desc": "Unisciti a oltre 50.000 studenti che ricevono i nostri consigli settimanali di fluidità.",
+    "blog.related.title": "Continua a leggere",
+    "blog.read_time": "min di lettura",
+
+    // BLOG - Categories
+    "blog.category.bastidores": "Dietro le quinte",
+    "blog.category.gamificacao": "Gamification",
+    "blog.category.dicas": "Consigli",
+    "blog.category.tecnologia": "Tecnologia",
+    "blog.category.comunidade": "Comunità",
+
+    // BLOG - Articles
+    "blog.article.historia-da-nossa-app.title": "La Storia della Nostra App",
+    "blog.article.historia-da-nossa-app.summary": "Scopri come abbiamo trasformato righe di codice in avventure linguistiche globali.",
+    "blog.article.psicologia-das-ligas.title": "La Psicologia dietro le Leghe",
+    "blog.article.psicologia-das-ligas.summary": "Perché siamo così competitivi? Comprendi la scienza della dopamina nelle Leghe Settimanali.",
+    "blog.article.segredos-do-arcade.title": "Segreti dell'Arcade Hub",
+    "blog.article.segredos-do-arcade.summary": "Consigli da maestro per battere record in Meteor Swipe e Vocabulary Sprint.",
+    "blog.article.ia-na-aprendizagem.title": "Come decide l'IA cosa impari?",
+    "blog.article.ia-na-aprendizagem.summary": "Scopri i retroscena di Marco, il nostro tutor intelligente.",
+    "blog.article.wall-of-love-melhores.title": "Wall of Love: La Top 10",
+    "blog.article.wall-of-love-melhores.summary": "Le testimonianze più emozionanti e divertenti della nostra comunità questo mese.",
+
     "menu.mission": "Missione",
     "menu.team": "Team",
     "menu.courses": "Corsi",
@@ -1810,6 +1995,43 @@ const translations = {
     "footer.legal.copyright": "Copyright",
     "footer.social": "Social",
 
+    // BLOG
+    "blog.page.title": "Blog",
+    "blog.page.subtitle": "Discover everything about MyDuolingo",
+    "blog.search.placeholder": "Search articles, guides or news...",
+    "blog.search.all": "All",
+    "blog.featured.read": "Read Featured Article",
+    "blog.card.read_more": "Continue reading",
+    "blog.card.by": "By",
+    "blog.back": "BACK TO BLOG",
+    "blog.not_found.title": "Article not found :(",
+    "blog.not_found.message": "We couldn't find any article with that name... Try searching for something else!",
+    "blog.newsletter.title": "Stay in the loop!",
+    "blog.newsletter.placeholder": "Your best email...",
+    "blog.newsletter.button": "Subscribe",
+    "blog.newsletter.desc": "Join 50,000+ students who receive our weekly fluency tips.",
+    "blog.related.title": "Continue reading",
+    "blog.read_time": "min read",
+
+    // BLOG - Categories
+    "blog.category.bastidores": "Behind the Scenes",
+    "blog.category.gamificacao": "Gamification",
+    "blog.category.dicas": "Tips",
+    "blog.category.tecnologia": "Technology",
+    "blog.category.comunidade": "Community",
+
+    // BLOG - Articles
+    "blog.article.historia-da-nossa-app.title": "The Story of Our App",
+    "blog.article.historia-da-nossa-app.summary": "Discover how we turned lines of code into global language adventures.",
+    "blog.article.psicologia-das-ligas.title": "The Psychology Behind the Leagues",
+    "blog.article.psicologia-das-ligas.summary": "Why are we so competitive? Understand the science of dopamine in the Weekly Leagues.",
+    "blog.article.segredos-do-arcade.title": "Secrets of the Arcade Hub",
+    "blog.article.segredos-do-arcade.summary": "Master tips to break records in Meteor Swipe and Vocabulary Sprint.",
+    "blog.article.ia-na-aprendizagem.title": "How does AI decide what you learn?",
+    "blog.article.ia-na-aprendizagem.summary": "Get insights into Marco, our intelligent tutor.",
+    "blog.article.wall-of-love-melhores.title": "Wall of Love: The Top 10",
+    "blog.article.wall-of-love-melhores.summary": "The most touching and fun testimonials from our community this month.",
+
     "menu.mission": "Mission",
     "menu.team": "Team",
     "menu.courses": "Courses",
@@ -2086,12 +2308,11 @@ const translations = {
 } as const;
 
 export type Language = keyof typeof translations;
-type TranslationKey = keyof typeof translations['pt'];
 
 interface LanguageContextType {
   lang: Language;
   setLang: (lang: Language) => void;
-  t: (key: TranslationKey) => string;
+  t: (key: string) => string;
   languages: Language[];
 }
 
@@ -2113,7 +2334,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     localStorage.setItem('myduolingo-lang', newLang);
   }, []);
 
-  const t = useCallback((key: TranslationKey) => {
+  const t = useCallback((key: string) => {
     const translation = translations[lang] || translations['pt'];
     return (translation as any)[key] || (translations['pt'] as any)[key] || key;
   }, [lang]);

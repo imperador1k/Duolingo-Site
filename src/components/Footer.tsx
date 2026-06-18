@@ -42,7 +42,7 @@ export function Footer() {
         </div>
         <div className="flex flex-col gap-3">
           <h3 className="text-white font-black uppercase text-base mb-2">{t('footer.social')}</h3>
-          <Link href="/" className="hover:text-white transition-colors">Blog</Link>
+          <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
           <Link href="/" className="hover:text-white transition-colors">Instagram</Link>
           <Link href="/" className="hover:text-white transition-colors">Twitter</Link>
           <Link href="/" className="hover:text-white transition-colors">YouTube</Link>
