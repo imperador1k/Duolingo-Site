@@ -50,10 +50,27 @@ const LazyLottieComponent = ({ animationPath, className, priority = false }: Laz
     const controller = new AbortController();
     
     const loadLottie = async () => {
+      // Check sessionStorage cache first
+      const cacheKey = `lottie:${animationPath}`;
+      const cached = sessionStorage.getItem(cacheKey);
+      if (cached) {
+        try {
+          setAnimationData(JSON.parse(cached));
+          return;
+        } catch {
+          sessionStorage.removeItem(cacheKey);
+        }
+      }
+
       try {
         const response = await fetch(animationPath, { signal: controller.signal });
         if (!response.ok) throw new Error("Lottie not found");
         const data = await response.json();
+        // Cache in sessionStorage (limit to ~5MB per entry)
+        const jsonStr = JSON.stringify(data);
+        if (jsonStr.length < 5 * 1024 * 1024) {
+          sessionStorage.setItem(cacheKey, jsonStr);
+        }
         setAnimationData(data);
       } catch (err: any) {
         if (err.name !== 'AbortError') {

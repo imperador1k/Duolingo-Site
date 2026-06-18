@@ -10,7 +10,6 @@ import {
 } from 'lucide-react';
 import { Button3D } from '@/components/Button3D';
 import { useTranslation } from '@/hooks/useTranslation';
-import { LazyLottie } from '@/components/LazyLottie';
 
 // Estrutura de dados para o "Portal de Documentação"
 const DOCS_DATA = [
@@ -155,14 +154,16 @@ export default function DoubtsPage() {
             </motion.div>
           </div>
 
-          {/* Animação do Duo Mascot Lottie na direita */}
+          {/* Animação do Duo Mascot - CSS only */}
           <div className="hidden md:col-span-4 md:flex justify-center items-center">
             <motion.div 
               initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
               animate={{ opacity: 1, scale: 1, rotate: 0 }}
-              className="w-48 h-48 select-none pointer-events-none drop-shadow-md"
+              className="w-48 h-48 select-none pointer-events-none"
             >
-              <LazyLottie animationPath="/duo_animation.json" />
+              <div className="w-full h-full rounded-full bg-gradient-to-br from-[#58cc02] to-[#46a302] flex items-center justify-center shadow-lg animate-bounce-slow">
+                <div className="text-white text-7xl font-black tracking-tight select-none">Duo</div>
+              </div>
             </motion.div>
           </div>
         </header>
@@ -325,8 +326,8 @@ export default function DoubtsPage() {
               animate={{ opacity: 1, y: 0 }}
               className="py-16 text-center flex flex-col items-center justify-center bg-gray-50/50 rounded-3xl border-2 border-dashed border-gray-200 p-8"
             >
-              <div className="w-32 h-32 mb-6">
-                <LazyLottie animationPath="/error_404.json" />
+              <div className="w-32 h-32 mb-6 rounded-full bg-gray-100 flex items-center justify-center">
+                <Search className="w-12 h-12 text-gray-300" />
               </div>
               <h3 className="text-xl font-black text-[#3c3c3c] mb-2">{t('info.doubts.no_results')} &quot;{searchQuery}&quot;</h3>
               <p className="text-sm font-bold text-gray-400 max-w-sm leading-relaxed">

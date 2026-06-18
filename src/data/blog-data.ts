@@ -20,7 +20,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     category: "Bastidores",
     author: "Equipa MyDuolingo",
     date: "28 de Abril, 2026",
-    image: "/images/duolingo1.png",
+    image: "/images/duolingo1.webp",
     featured: true,
     content: `<p>Tudo começou com um sonho simples: tornar a educação gratuita e divertida para todos...</p>`
   },
@@ -31,7 +31,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     category: "Gamificação",
     author: "Dr. Linguística",
     date: "27 de Abril, 2026",
-    image: "/images/duolingo10.png",
+    image: "/images/duolingo10.webp",
     content: `
       <p>Já te perguntaste porque é que não consegues parar de subir na Liga Diamante? A resposta está no teu cérebro.</p>
       <p>O sistema de ligas da MyDuolingo utiliza o conceito de <strong>recompensa variável</strong>. Quando ultrapassas um rival, o teu cérebro liberta uma pequena dose de dopamina que te motiva a continuar.</p>
@@ -46,7 +46,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     category: "Dicas",
     author: "Pro Gamer",
     date: "26 de Abril, 2026",
-    image: "/images/duolingo25.png",
+    image: "/images/duolingo25.webp",
     content: `
       <p>O Arcade Hub não é apenas diversão; é treino de reflexos puro. Aqui estão 3 dicas para dominares os rankings:</p>
       <ul>
@@ -63,7 +63,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     category: "Tecnologia",
     author: "Equipa IA",
     date: "25 de Abril, 2026",
-    image: "/images/duolingo15.png",
+    image: "/images/duolingo15.webp",
     content: `<p>O nosso tutor, Marco, analisa os teus erros em milissegundos...</p>`
   },
   {
@@ -73,7 +73,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     category: "Comunidade",
     author: "Equipa Social",
     date: "24 de Abril, 2026",
-    image: "/images/duolingo38.png",
+    image: "/images/duolingo38.webp",
     content: `
       <p>A nossa comunidade é o que nos move. Desde alunos que aprenderam japonês para viajar, até avós que jogam com os netos.</p>
       <p>Selecionámos as 10 assinaturas mais criativas do nosso Wall of Love. O amor pela aprendizagem não tem fronteiras!</p>

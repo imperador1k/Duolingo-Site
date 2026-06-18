@@ -86,7 +86,7 @@ export default function BlogHome() {
             </Link>
           )) : (
             <div style={{ gridColumn: '1/-1', textAlign: 'center', padding: '40px' }}>
-              <img src="/images/duolingo40.png" style={{ width: '120px', opacity: 0.5 }} />
+              <img src="/images/duolingo40.webp" style={{ width: '120px', opacity: 0.5 }} />
               <p style={{ color: '#aaa', marginTop: '16px' }}>Não encontramos nenhum artigo com esse nome...</p>
             </div>
           )}
@@ -110,7 +110,7 @@ export default function BlogHome() {
           </div>
         </div>
         <div style={{ flex: 0.6, display: 'flex', justifyContent: 'center' }}>
-          <img src="/images/duolingo42.png" alt="Newsletter" style={{ width: '200px' }} />
+                     <img src="/images/duolingo42.webp" alt="Newsletter" style={{ width: '200px' }} />
         </div>
       </section>
     </div>

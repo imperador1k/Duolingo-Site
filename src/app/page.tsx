@@ -34,7 +34,7 @@ export default function LandingPage() {
               transition={{ type: "spring", stiffness: 100, damping: 15 }}
               className="relative flex justify-center items-center w-full order-1 md:order-0 min-h-[300px] md:min-h-[350px]"
             >
-              <LazyLottie animationPath="/lotties/filipe.json" className="w-full max-w-[300px] sm:max-w-[350px] md:max-w-[450px] h-auto z-10" priority={true} />
+              <LazyLottie animationPath="/lotties/filipe.json" className="w-full max-w-[300px] sm:max-w-[350px] md:max-w-[450px] h-auto z-10" />
             </motion.div>
 
             {/* Content */}
@@ -187,7 +187,7 @@ export default function LandingPage() {
         </div>
 
         <div className="w-full relative z-0 pointer-events-none leading-none mt-4 md:-mt-36">
-          <LazyLottie animationPath="/lotties/filipe12.json" className="w-full h-auto" priority={true} />
+          <LazyLottie animationPath="/lotties/filipe12.json" className="w-full h-auto" />
         </div>
       </section>
 

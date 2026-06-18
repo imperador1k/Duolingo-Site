@@ -33,7 +33,7 @@ export default function TeamPage() {
             <div className="absolute -inset-1 bg-linear-to-r from-[#1cb0f6] to-[#58cc02] rounded-[2.5rem] blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
             <div className="relative w-48 h-48 rounded-[2.2rem] overflow-hidden border-4 border-white shadow-lg">
               <img 
-                src="/creator.jpg" 
+                src="/creator.webp" 
                 alt="Miguel - Founder" 
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 onError={(e) => {
